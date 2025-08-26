@@ -4,7 +4,7 @@ const Footer = () => {
   return <footer className="bg-gradient-deep text-primary-foreground py-12">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-8 mb-8">
+          <div className="grid md:grid-cols-4 gap-8 mb-8">
             {/* Logo and Description */}
             <div className="space-y-4">
               <div className="flex items-center space-x-2">
@@ -18,9 +18,9 @@ const Footer = () => {
             </div>
 
             {/* Navigation Links */}
-            <div className="space-y-4">
+            <div className="space-y-4 flex flex-col items-center">
               <h4 className="text-lg font-semibold">Навигация</h4>
-              <nav className="flex flex-col space-y-2 text-sm">
+              <nav className="flex flex-col space-y-2 text-sm text-center">
                 <a href="#home" className="text-primary-foreground/80 hover:text-accent transition-colors">Главная</a>
                 <a href="#about" className="text-primary-foreground/80 hover:text-accent transition-colors">О нас</a>
                 <a href="#portfolio" className="text-primary-foreground/80 hover:text-accent transition-colors">Каталог</a>
@@ -28,14 +28,26 @@ const Footer = () => {
               </nav>
             </div>
 
+            {/* Stock Platforms */}
+            <div className="space-y-4">
+              <h4 className="text-lg font-semibold">Стоковые платформы</h4>
+              <div className="space-y-2 text-sm text-primary-foreground/80">
+                <div><a href="https://stock.adobe.com/contributor/205029892/videodive" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Adobe Stock</a></div>
+                <div><a href="https://istockphoto.com/ru/portfolio/VIDEODIVE?assettype=film" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">iStockphoto</a></div>
+                <div><a href="https://pond5.com/artist/vmsartstudio619" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Pond5</a></div>
+                <div><a href="https://shutterstock.com/ru/g/vmsartstudio/video?rid=371249757" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Shutterstock</a></div>
+              </div>
+            </div>
+
             {/* Contact Info */}
             <div className="space-y-4">
               <h4 className="text-lg font-semibold">Свяжитесь с нами</h4>
               <div className="space-y-2 text-sm text-primary-foreground/80">
-                <div>📧 Email: o666699999@gmail.com</div>
-                <div>📱 WhatsApp/Telegram: +381 66 66 999 99</div>
-                <div>🌍 Сайт: www.oceanmediaproject.com</div>
-                <div>💼 LinkedIn: <a href="https://linkedin.com/in/oceanmediaproject" className="hover:text-accent transition-colors">Ocean Media Project</a></div>
+                <div>📧 Email: <a href="mailto:o666699999@gmail.com" className="hover:text-accent transition-colors">o666699999@gmail.com</a></div>
+                <div>📱 WhatsApp: <a href="https://wa.me/381666699999" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">+381 66 66 999 99</a></div>
+                <div>📱 Telegram: <a href="https://t.me/+381666699999" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">+381 66 66 999 99</a></div>
+                <div>🌍 Сайт: <a href="https://www.oceanmediaproject.com" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">www.oceanmediaproject.com</a></div>
+                <div>💼 LinkedIn: <a href="https://linkedin.com/in/oceanmediaproject" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Ocean Media Project</a></div>
               </div>
             </div>
           </div>
