@@ -59,12 +59,12 @@ const Footer = () => {
                 © {currentYear} Ocean Media Group. Все права защищены.
               </div>
               <div className="flex flex-wrap gap-4 justify-center md:justify-end mt-4 md:mt-0 text-xs">
+                <a href="https://www.youtube.com/@OceanMediaProject" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">YouTube</a>
+                <a href="https://rutube.ru/channel/61735052/" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Rutube</a>
                 <a href="https://stock.adobe.com/contributor/205029892/videodive" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Adobe Stock</a>
                 <a href="https://istockphoto.com/ru/portfolio/VIDEODIVE?assettype=film" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">iStockphoto</a>
                 <a href="https://pond5.com/artist/vmsartstudio619" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Pond5</a>
                 <a href="https://shutterstock.com/ru/g/vmsartstudio/video?rid=371249757" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Shutterstock</a>
-                <a href="https://www.youtube.com/@OceanMediaProject" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">YouTube</a>
-                <a href="https://rutube.ru/channel/61735052/" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Rutube</a>
               </div>
             </div>
           </div>
