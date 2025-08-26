@@ -3,31 +3,6 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Play, Eye } from "lucide-react";
 const PortfolioSection = () => {
-  const categories = [{
-    id: "underwater",
-    title: "Подводный мир",
-    description: "Коралловые рифы, морская живность",
-    videoCount: "150+ видео",
-    preview: "https://images.unsplash.com/photo-1583212292454-1fe6229603b7?w=500&h=300&fit=crop"
-  }, {
-    id: "nature",
-    title: "Природа",
-    description: "Джунгли, горы, леса",
-    videoCount: "200+ видео",
-    preview: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=500&h=300&fit=crop"
-  }, {
-    id: "elements",
-    title: "Элементы природы",
-    description: "Огонь, вода, земля, воздух",
-    videoCount: "100+ видео",
-    preview: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=500&h=300&fit=crop"
-  }, {
-    id: "urban",
-    title: "Городские пейзажи",
-    description: "Современная архитектура, городская природа",
-    videoCount: "80+ видео",
-    preview: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=500&h=300&fit=crop"
-  }];
   const platforms = [{
     name: "📺 YouTube-канал",
     link: "https://www.youtube.com/@OceanMediaProject",
@@ -38,20 +13,54 @@ const PortfolioSection = () => {
     description: "Российская видеоплатформа"
   }, {
     name: "🎞️ Shutterstock",
-    link: "#",
+    link: "https://shutterstock.com/ru/g/vmsartstudio/video?rid=371249757",
     description: "Премиум-контент для профессионалов"
   }, {
-    name: "🎥 Pond5",
-    link: "#", 
-    description: "Videodive, Videoton, Vmsartstudio619"
+    name: "🎥 Pond5 (Videodive)",
+    link: "https://pond5.com/artist/videodive", 
+    description: "Videodive контент"
+  }, {
+    name: "🎥 Pond5 (Videoton)",
+    link: "https://pond5.com/artist/videoton", 
+    description: "Videoton контент"
+  }, {
+    name: "🎥 Pond5 (Vmsartstudio619)",
+    link: "https://pond5.com/artist/vmsartstudio619", 
+    description: "Vmsartstudio619 контент"
   }, {
     name: "📽 Adobe Stock",
-    link: "#",
+    link: "https://stock.adobe.com/contributor/205029892/videodive",
     description: "Качественный контент для креативных проектов"
   }, {
-    name: "🌍 Getty Images",
-    link: "#",
-    description: "Эксклюзивные видеоматериалы"
+    name: "📷 iStockphoto",
+    link: "https://istockphoto.com/ru/portfolio/VIDEODIVE?assettype=film",
+    description: "Профессиональные видеоматериалы"
+  }];
+
+  const contentTypes = [{
+    emoji: "🧘",
+    title: "Relaxation videos",
+    description: "визуальные практики для отдыха и восстановления"
+  }, {
+    emoji: "☯️",
+    title: "Zen videos", 
+    description: "атмосфера спокойствия и медитации"
+  }, {
+    emoji: "🌿",
+    title: "Wellness visuals",
+    description: "для SPA, йоги и оздоровительных центров"
+  }, {
+    emoji: "🎶",
+    title: "Soothing visuals",
+    description: "фоновая эстетика для гармоничной атмосферы"
+  }, {
+    emoji: "🌌",
+    title: "Ambient videos",
+    description: "универсальный контент для Digital Signage и ТВ"
+  }, {
+    emoji: "🌍",
+    title: "Nature relaxation films",
+    description: "пейзажи, природа, элементы"
   }];
   return <section id="portfolio" className="py-20 bg-background">
       <div className="container mx-auto px-4">
@@ -79,34 +88,24 @@ const PortfolioSection = () => {
             </div>
           </div>
 
-          {/* Categories Grid */}
-          <div className="grid md:grid-cols-2 gap-8 mb-16">
-            {categories.map(category => <Card key={category.id} className="group overflow-hidden shadow-ocean hover:shadow-depth transition-all duration-500 border-accent/20">
-                <div className="relative">
-                  <img src={category.preview} alt={category.title} className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent"></div>
-                  <div className="absolute top-4 right-4">
-                    <Badge variant="secondary" className="bg-background/90 text-primary">
-                      {category.videoCount}
-                    </Badge>
-                  </div>
-                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <Button size="lg" className="bg-background/90 text-primary hover:bg-background shadow-depth">
-                      <Play className="mr-2 h-5 w-5" />
-                      Превью
-                    </Button>
-                  </div>
-                </div>
-                
-                <CardContent className="p-6">
-                  <h3 className="text-2xl font-bold text-primary mb-2">{category.title}</h3>
-                  <p className="text-muted-foreground mb-4">{category.description}</p>
-                  <Button variant="outline" className="w-full border-accent text-accent hover:bg-accent hover:text-accent-foreground">
-                    <Eye className="mr-2 h-4 w-4" />
-                    Смотреть каталог
-                  </Button>
-                </CardContent>
-              </Card>)}
+          {/* Content Types Section */}
+          <div className="mb-16">
+            <h3 className="text-3xl font-bold text-primary text-center mb-8">МЫ ПРЕДЛАГАЕМ</h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {contentTypes.map((content, index) => (
+                <a 
+                  key={index}
+                  href="https://www.youtube.com/@OceanMediaProject"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-card border border-accent/20 rounded-lg p-6 text-center hover:border-accent/40 transition-colors duration-300 group"
+                >
+                  <div className="text-4xl mb-4">{content.emoji}</div>
+                  <h4 className="text-xl font-semibold text-primary mb-2 group-hover:text-accent transition-colors">{content.title}</h4>
+                  <p className="text-muted-foreground text-sm">{content.description}</p>
+                </a>
+              ))}
+            </div>
           </div>
 
           {/* Call to Action */}
