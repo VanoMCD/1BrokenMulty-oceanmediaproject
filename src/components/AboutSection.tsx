@@ -85,7 +85,7 @@ const AboutSection = () => {
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
                   <Trees className="h-5 w-5 text-accent" />
-                  <p><strong>Природные красоты:</strong> леса, реки, водопады</p>
+                  <p><strong>Природные красоты:</strong> побережья, леса, реки, каньоны, водопады</p>
                 </div>
                 <div className="flex items-center gap-3">
                   <Sparkles className="h-5 w-5 text-accent" />
