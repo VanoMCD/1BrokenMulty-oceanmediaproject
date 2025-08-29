@@ -95,42 +95,6 @@ const AboutSection = () => {
             </div>
           </div>
 
-          {/* Our Content Types */}
-          <div className="bg-card rounded-xl p-8 shadow-ocean">
-            <h3 className="text-2xl font-bold text-primary mb-6 text-center">Направления нашего контента</h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-              <div className="text-center p-4">
-                <div className="text-2xl mb-2">🧘</div>
-                <p className="font-semibold text-primary">Relaxation videos</p>
-                <p className="text-sm text-muted-foreground">визуальные практики для отдыха и восстановления</p>
-              </div>
-              <div className="text-center p-4">
-                <div className="text-2xl mb-2">☯️</div>
-                <p className="font-semibold text-primary">Zen videos</p>
-                <p className="text-sm text-muted-foreground">атмосфера спокойствия и медитации</p>
-              </div>
-              <div className="text-center p-4">
-                <div className="text-2xl mb-2">🌿</div>
-                <p className="font-semibold text-primary">Wellness visuals</p>
-                <p className="text-sm text-muted-foreground">для SPA, йоги и оздоровительных центров</p>
-              </div>
-              <div className="text-center p-4">
-                <div className="text-2xl mb-2">🎶</div>
-                <p className="font-semibold text-primary">Soothing visuals</p>
-                <p className="text-sm text-muted-foreground">фоновая эстетика для гармоничной атмосферы</p>
-              </div>
-              <div className="text-center p-4">
-                <div className="text-2xl mb-2">🌌</div>
-                <p className="font-semibold text-primary">Ambient videos</p>
-                <p className="text-sm text-muted-foreground">универсальный контент для Digital Signage и ТВ</p>
-              </div>
-              <div className="text-center p-4">
-                <div className="text-2xl mb-2">🌍</div>
-                <p className="font-semibold text-primary">Nature relaxation films</p>
-                <p className="text-sm text-muted-foreground">пейзажи, природа, элементы</p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
