@@ -56,7 +56,7 @@ const AboutSection = () => {
             
             <div className="space-y-6">
               <div>
-                <h3 className="text-2xl font-bold text-primary mb-4">ЧТО МЫ ПРЕДЛАГАЕМ?</h3>
+                <h3 className="text-2xl font-bold text-primary mb-4">Направления нашего контента</h3>
                 <div className="space-y-3">
                   <p className="text-muted-foreground">✅ <strong>Готовый видео-контент</strong> – сотни часов релакс роликов и 24/7 стрим</p>
                   <p className="text-muted-foreground">✅ <strong>Любые виды лицензий и сроки</strong> – зарабатывайте, не думая о правовых рисках</p>

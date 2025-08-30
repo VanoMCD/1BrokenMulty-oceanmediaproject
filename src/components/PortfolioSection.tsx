@@ -98,11 +98,11 @@ const PortfolioSection = () => {
                   href="https://www.youtube.com/@OceanMediaProject"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-card border border-accent/20 rounded-lg p-6 text-center hover:border-accent/40 transition-colors duration-300 group"
+                   className="bg-card border border-accent/20 rounded-lg p-3 text-center hover:border-accent/40 transition-colors duration-300 group"
                 >
-                  <div className="text-4xl mb-4">{content.emoji}</div>
-                  <h4 className="text-xl font-semibold text-primary mb-2 group-hover:text-accent transition-colors">{content.title}</h4>
-                  <p className="text-muted-foreground text-sm">{content.description}</p>
+                  <div className="text-2xl mb-2">{content.emoji}</div>
+                  <h4 className="text-lg font-semibold text-primary mb-1 group-hover:text-accent transition-colors">{content.title}</h4>
+                  <p className="text-muted-foreground text-xs">{content.description}</p>
                 </a>
               ))}
             </div>
