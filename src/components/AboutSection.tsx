@@ -56,12 +56,63 @@ const AboutSection = () => {
             
             <div className="space-y-6">
               <div>
-                <h3 className="text-2xl font-bold text-primary mb-4">Направления нашего контента</h3>
-                <div className="space-y-3">
-                  <p className="text-muted-foreground">✅ <strong>Готовый видео-контент</strong> – сотни часов релакс роликов и 24/7 стрим</p>
-                  <p className="text-muted-foreground">✅ <strong>Любые виды лицензий и сроки</strong> – зарабатывайте, не думая о правовых рисках</p>
-                  <p className="text-muted-foreground">✅ <strong>Разрешение HD, FHD, 2K…</strong> – возможности есть, вопрос договоренностей</p>
-                  <p className="text-muted-foreground">✅ <strong>Индивидуальная адаптация</strong> – наложение звука, музыки, речи, текста</p>
+                <h3 className="text-2xl font-bold text-primary mb-6 text-center">Мы предлагаем</h3>
+                <div className="grid md:grid-cols-2 gap-4">
+                  <Card className="p-4 hover:shadow-lg transition-shadow">
+                    <CardContent className="p-0">
+                      <div className="flex items-start gap-3">
+                        <div className="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
+                          <CheckCircle className="h-5 w-5 text-primary" />
+                        </div>
+                        <div>
+                          <p className="font-semibold text-primary">Готовый видео-контент</p>
+                          <p className="text-muted-foreground text-sm">сотни часов релакс роликов и 24/7 стрим</p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                  
+                  <Card className="p-4 hover:shadow-lg transition-shadow">
+                    <CardContent className="p-0">
+                      <div className="flex items-start gap-3">
+                        <div className="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
+                          <Award className="h-5 w-5 text-primary" />
+                        </div>
+                        <div>
+                          <p className="font-semibold text-primary">Любые виды лицензий и сроки</p>
+                          <p className="text-muted-foreground text-sm">зарабатывайте, не думая о правовых рисках</p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                  
+                  <Card className="p-4 hover:shadow-lg transition-shadow">
+                    <CardContent className="p-0">
+                      <div className="flex items-start gap-3">
+                        <div className="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
+                          <Globe className="h-5 w-5 text-primary" />
+                        </div>
+                        <div>
+                          <p className="font-semibold text-primary">Разрешение HD, FHD, 2K…</p>
+                          <p className="text-muted-foreground text-sm">возможности есть, вопрос договоренностей</p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                  
+                  <Card className="p-4 hover:shadow-lg transition-shadow">
+                    <CardContent className="p-0">
+                      <div className="flex items-start gap-3">
+                        <div className="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
+                          <Zap className="h-5 w-5 text-primary" />
+                        </div>
+                        <div>
+                          <p className="font-semibold text-primary">Индивидуальная адаптация</p>
+                          <p className="text-muted-foreground text-sm">наложение звука, музыки, речи, текста</p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
                 </div>
               </div>
             </div>
