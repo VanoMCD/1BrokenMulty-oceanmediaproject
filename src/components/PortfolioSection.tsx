@@ -62,7 +62,7 @@ const PortfolioSection = () => {
     title: "Nature relaxation films",
     description: "пейзажи, природа, элементы"
   }];
-  return <section id="portfolio" className="py-20 bg-background">
+  return <section id="portfolio" className="pt-6 pb-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
