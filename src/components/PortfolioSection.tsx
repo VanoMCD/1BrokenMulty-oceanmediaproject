@@ -37,31 +37,6 @@ const PortfolioSection = () => {
     description: "Профессиональные видеоматериалы"
   }];
 
-  const contentTypes = [{
-    emoji: "🧘",
-    title: "Relaxation videos",
-    description: "визуальные практики для отдыха и восстановления"
-  }, {
-    emoji: "☯️",
-    title: "Zen videos", 
-    description: "атмосфера спокойствия и медитации"
-  }, {
-    emoji: "🌿",
-    title: "Wellness visuals",
-    description: "для SPA, йоги и оздоровительных центров"
-  }, {
-    emoji: "🎶",
-    title: "Soothing visuals",
-    description: "фоновая эстетика для гармоничной атмосферы"
-  }, {
-    emoji: "🌌",
-    title: "Ambient videos",
-    description: "универсальный контент для Digital Signage и ТВ"
-  }, {
-    emoji: "🌍",
-    title: "Nature relaxation films",
-    description: "пейзажи, природа, элементы"
-  }];
   return <section id="portfolio" className="pt-6 pb-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
@@ -87,8 +62,6 @@ const PortfolioSection = () => {
               ))}
             </div>
           </div>
-
-
         </div>
       </div>
     </section>;
