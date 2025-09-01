@@ -88,16 +88,16 @@ const ClientsSection = () => {
           </div>
 
           {/* Client Types Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+          <div className="grid md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 mb-16">
             {clientTypes.map((client, index) => (
               <Card key={index} className="text-center shadow-ocean hover:shadow-depth transition-all duration-300 group border-accent/20 hover:border-accent/40">
-                <CardContent className="pt-8">
-                  <div className="text-accent mb-4 flex justify-center group-hover:scale-110 transition-transform duration-300">
-                    {client.icon}
+                <CardContent className="pt-4 pb-4">
+                  <div className="text-accent mb-2 flex justify-center group-hover:scale-110 transition-transform duration-300">
+                    <div className="scale-75">{client.icon}</div>
                   </div>
-                  <h4 className="text-lg font-semibold text-primary mb-3">{client.title}</h4>
-                  <p className="text-sm text-muted-foreground mb-3">{client.description}</p>
-                  <div className="text-xs text-accent font-medium bg-accent/10 rounded-full px-3 py-1">
+                  <h4 className="text-sm font-semibold text-primary mb-2 leading-tight">{client.title}</h4>
+                  <p className="text-xs text-muted-foreground mb-2 leading-snug">{client.description}</p>
+                  <div className="text-xs text-accent font-medium bg-accent/10 rounded-full px-2 py-1">
                     {client.use}
                   </div>
                 </CardContent>
