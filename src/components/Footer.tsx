@@ -4,7 +4,7 @@ const Footer = () => {
   return <footer className="bg-gradient-deep text-primary-foreground py-12">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-8 mb-8">
+          <div className="grid md:grid-cols-2 gap-12 mb-8">
             {/* Logo and Description */}
             <div className="space-y-4">
               <div className="flex items-center space-x-2">
@@ -15,17 +15,6 @@ const Footer = () => {
                 Профессиональный видеоконтент высочайшего качества для вашего бизнеса. 
                 Эксклюзивные кадры подводного мира и природы.
               </p>
-            </div>
-
-            {/* Navigation Links - Centered */}
-            <div className="space-y-4 flex flex-col items-center">
-              <h4 className="text-lg font-semibold">Навигация</h4>
-              <nav className="flex flex-col space-y-2 text-sm text-center">
-                <a href="#home" className="text-primary-foreground/80 hover:text-accent transition-colors">Главная</a>
-                <a href="#about" className="text-primary-foreground/80 hover:text-accent transition-colors">О нас</a>
-                <a href="#portfolio" className="text-primary-foreground/80 hover:text-accent transition-colors">Каталог</a>
-                <a href="#clients" className="text-primary-foreground/80 hover:text-accent transition-colors">Для кого</a>
-              </nav>
             </div>
 
             {/* Contact Info */}
