@@ -1,3 +1,4 @@
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -35,6 +36,10 @@ const PortfolioSection = () => {
     name: "📷 iStockphoto",
     link: "https://istockphoto.com/ru/portfolio/VIDEODIVE?assettype=film",
     description: "Профессиональные видеоматериалы"
+  }, {
+    name: "🎬 Pixtastock",
+    link: "https://creator-en.pixtastock.com/@videoton/footage",
+    description: "Японская платформа для стокового контента"
   }];
 
   return <section id="portfolio" className="pt-6 pb-5 bg-background">
