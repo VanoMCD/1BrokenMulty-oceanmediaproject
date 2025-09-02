@@ -130,7 +130,7 @@ const ClientsSection = () => {
           </div>
 
           {/* Content Types Section */}
-          <div className="mt-20">
+          <div className="mt-5">
             <h3 className="text-3xl font-bold text-primary text-center mb-8">Направления нашего контента</h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               <a 
