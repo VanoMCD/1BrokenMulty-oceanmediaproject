@@ -1,4 +1,4 @@
-import { Waves } from "lucide-react";
+import { Waves, Phone } from "lucide-react";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return <footer className="bg-gradient-deep text-primary-foreground py-12">
@@ -24,7 +24,10 @@ const Footer = () => {
 
             {/* Contact Info */}
             <div className="space-y-4">
-              <h4 className="text-lg font-semibold">Свяжитесь с нами</h4>
+              <div className="flex items-center space-x-2">
+                <Phone className="h-8 w-8 text-accent animate-ocean-wave" />
+                <span className="text-xl font-bold">СВЯЖИТЕСЬ С НАМИ</span>
+              </div>
               <div className="space-y-2 text-sm text-primary-foreground/80">
                 <div>📧 Email: <a href="mailto:o666699999@gmail.com" className="hover:text-accent transition-colors">o666699999@gmail.com</a></div>
                 <div>📱 WhatsApp: <a href="https://wa.me/381666699999" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">+381 66 66 999 99</a></div>
