@@ -108,23 +108,17 @@ const ClientsSection = () => {
           {/* Call to Action */}
           <div className="text-center bg-gradient-ocean rounded-xl p-12 text-primary-foreground">
             <h3 className="text-3xl font-bold mb-4">Готовы к сотрудничеству?</h3>
-            <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-              📩 Свяжитесь с нами — подберем и подготовим контент под Ваш бизнес! Готовы к сотрудничеству? Напишите нам для получения каталога и тестовых материалов!
+            <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto text-center">
+              📩 Напишите нам на любом языке!<br />
+              Подберем и подготовим контент под Ваш бизнес!
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
+            <div className="flex justify-center">
+              <a 
+                href="mailto:o666699999@gmail.com?subject=WEB%20Request&body=Здравствуйте!%0A%0AНас%20интересует%20Relax%20контент%20для%20показов%20на%20...%0AНам%20необходимо%20примерно%20...%20часов%0AТерритории%20использования%20-%20..."
+                className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold bg-accent text-accent-foreground rounded-lg hover:bg-accent/90 transition-colors duration-300 w-full max-w-md"
               >
-                Получить каталог
-              </Button>
-              <Button 
-                size="lg" 
-                className="bg-accent text-accent-foreground hover:bg-accent/90"
-              >
-                Запросить тест-материалы
-              </Button>
+                Отправить запрос
+              </a>
             </div>
           </div>
 
