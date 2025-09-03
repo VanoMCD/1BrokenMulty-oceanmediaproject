@@ -106,7 +106,7 @@ const ClientsSection = () => {
           </div>
 
           {/* Call to Action */}
-          <div className="text-center bg-gradient-deep rounded-xl p-12 text-primary-foreground">
+          <div className="text-center bg-gradient-ocean rounded-xl p-12 text-primary-foreground">
             <h3 className="text-3xl font-bold mb-4">Готовы к сотрудничеству?</h3>
             <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
               📩 Свяжитесь с нами — подберем и подготовим контент под Ваш бизнес! Готовы к сотрудничеству? Напишите нам для получения каталога и тестовых материалов!
