@@ -192,16 +192,6 @@ const ClientsSection = () => {
                 <h4 className="text-lg font-semibold text-primary mb-1 group-hover:text-accent transition-colors">Nature relaxation films</h4>
                 <p className="text-muted-foreground text-xs">пейзажи, природа, элементы</p>
               </a>
-              <a 
-                href="https://creator-en.pixtastock.com/@videoton/footage"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-card border border-accent/20 rounded-lg p-3 text-center hover:border-accent/40 transition-colors duration-300 group"
-              >
-                <div className="text-2xl mb-2">🎬</div>
-                <h4 className="text-lg font-semibold text-primary mb-1 group-hover:text-accent transition-colors">Pixtastock</h4>
-                <p className="text-muted-foreground text-xs">японская платформа для стокового контента</p>
-              </a>
             </div>
           </div>
         </div>

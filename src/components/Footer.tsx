@@ -51,6 +51,7 @@ const Footer = () => {
                 <a href="https://istockphoto.com/ru/portfolio/VIDEODIVE?assettype=film" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">iStockphoto</a>
                 <a href="https://pond5.com/artist/vmsartstudio619" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Pond5</a>
                 <a href="https://shutterstock.com/ru/g/vmsartstudio/video?rid=371249757" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Shutterstock</a>
+                <a href="https://creator-en.pixtastock.com/@videoton/footage" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Pixtastock</a>
               </div>
             </div>
           </div>
