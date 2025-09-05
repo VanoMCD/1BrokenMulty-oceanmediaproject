@@ -42,7 +42,7 @@ const PortfolioSection = () => {
     description: "Японская платформа для стокового контента"
   }];
 
-  return <section id="portfolio" className="pt-1 pb-5 bg-gradient-portfolio">
+  return <section id="portfolio" className="pt-0 pb-0 bg-gradient-seamless">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-4">
