@@ -48,7 +48,7 @@ All colors MUST be HSL.
     --gradient-deep: linear-gradient(180deg, hsl(215 85% 15%), hsl(215 85% 25%));
     --gradient-surface: linear-gradient(135deg, hsl(185 55% 88%), hsl(218 45% 98%));
     --gradient-portfolio: linear-gradient(135deg, hsl(185 55% 88%), hsl(218 45% 98%));
-    --gradient-seamless: linear-gradient(135deg, hsl(185 65% 85%), hsl(218 55% 95%));
+    --gradient-seamless: linear-gradient(135deg, hsl(185 70% 75%), hsl(218 60% 85%));
     
     /* Ocean animations */
     --ocean-flow: cubic-bezier(0.4, 0, 0.2, 1);
