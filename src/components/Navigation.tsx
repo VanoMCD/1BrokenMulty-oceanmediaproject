@@ -33,9 +33,11 @@ const Navigation = () => {
                 {item.label}
               </a>
             ))}
-            <Button variant="default" className="bg-gradient-ocean text-primary-foreground shadow-ocean hover:shadow-depth transition-all duration-300">
-              Связаться
-            </Button>
+            <a href="mailto:o666699999@gmail.com?subject=WEB%20Request&body=Здравствуйте!%0A%0AНас%20интересует%20Relax%20контент%20для%20показов%20на%20...%0AНам%20необходимо%20примерно%20...%20часов%0AТерритории%20использования%20-%20...">
+              <Button variant="default" className="bg-gradient-ocean text-primary-foreground shadow-ocean hover:shadow-depth transition-all duration-300">
+                Связаться
+              </Button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -61,9 +63,11 @@ const Navigation = () => {
                   {item.label}
                 </a>
               ))}
-              <Button variant="default" className="bg-gradient-ocean text-primary-foreground w-full">
-                Связаться
-              </Button>
+              <a href="mailto:o666699999@gmail.com?subject=WEB%20Request&body=Здравствуйте!%0A%0AНас%20интересует%20Relax%20контент%20для%20показов%20на%20...%0AНам%20необходимо%20примерно%20...%20часов%0AТерритории%20использования%20-%20...">
+                <Button variant="default" className="bg-gradient-ocean text-primary-foreground w-full">
+                  Связаться
+                </Button>
+              </a>
             </div>
           </div>
         )}
