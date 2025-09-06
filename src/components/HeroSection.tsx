@@ -17,16 +17,16 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4 max-w-5xl mx-auto">
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-float">
+        <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-float text-white">
           OCEAN MEDIA PROJECT
         </h1>
         <h2 className="text-xl md:text-3xl mb-8 text-white font-light">
           НОВОЕ ИЗМЕРЕНИЕ ВИДЕО: RELAX И AMBIENT КОНТЕНТ ДЛЯ ВАШЕГО БИЗНЕСА
         </h2>
         <div className="text-lg md:text-xl mb-12 text-white max-w-3xl mx-auto space-y-2">
-          <p>📌 Профессиональная видеотека с глобальными правами</p>
-          <p>📌 Уникальные видео подводного и окружающего мира</p>
-          <p>📌 Контент для TV, Digital Signage, рекламы, SPA, отелей и других сфер</p>
+          <p className="text-white">📌 Профессиональная видеотека с глобальными правами</p>
+          <p className="text-white">📌 Уникальные видео подводного и окружающего мира</p>
+          <p className="text-white">📌 Контент для TV, Digital Signage, рекламы, SPA, отелей и других сфер</p>
         </div>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
