@@ -68,7 +68,7 @@ const ClientsSection = () => {
   ];
 
   return (
-    <section id="clients" className="pt-0 pb-20 bg-gradient-seamless">
+    <section id="clients" className="pt-1 pb-20 bg-gradient-surface">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-8">
