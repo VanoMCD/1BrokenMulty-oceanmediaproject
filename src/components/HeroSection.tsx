@@ -20,10 +20,10 @@ const HeroSection = () => {
         <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-float">
           OCEAN MEDIA PROJECT
         </h1>
-        <h2 className="text-xl md:text-3xl mb-8 text-primary-foreground/90 font-light">
+        <h2 className="text-xl md:text-3xl mb-8 text-white font-light">
           НОВОЕ ИЗМЕРЕНИЕ ВИДЕО: RELAX И AMBIENT КОНТЕНТ ДЛЯ ВАШЕГО БИЗНЕСА
         </h2>
-        <div className="text-lg md:text-xl mb-12 text-primary-foreground/80 max-w-3xl mx-auto space-y-2">
+        <div className="text-lg md:text-xl mb-12 text-white max-w-3xl mx-auto space-y-2">
           <p>📌 Профессиональная видеотека с глобальными правами</p>
           <p>📌 Уникальные видео подводного и окружающего мира</p>
           <p>📌 Контент для TV, Digital Signage, рекламы, SPA, отелей и других сфер</p>
