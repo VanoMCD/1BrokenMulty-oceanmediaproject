@@ -25,7 +25,7 @@ const Footer = () => {
             {/* Contact Info */}
             <div className="space-y-4">
               <div className="flex items-center space-x-2">
-                <Phone className="h-6 w-6 text-accent animate-ocean-wave" />
+                <Phone className="h-6 w-6 text-white animate-ocean-wave" />
                 <span className="text-lg font-bold">СВЯЖИТЕСЬ С НАМИ</span>
               </div>
               <div className="space-y-2 text-sm text-primary-foreground/80">
