@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Building2, Waves, Heart, Monitor, Tv, Play, Youtube, Users } from "lucide-react";
+import { Building2, Waves, Heart, Monitor, Tv, Play, Youtube, Users, Utensils } from "lucide-react";
 import clientsImage from "@/assets/clients-showcase.jpg";
 
 const ClientsSection = () => {
@@ -18,9 +18,9 @@ const ClientsSection = () => {
       use: "Эксклюзивный контент для демонстраций"
     },
     {
-      icon: <Building2 className="h-8 w-8" />,
-      title: "🏨 Отели и курорты",
-      description: "фоновое видео для лобби и номеров",
+      icon: <Utensils className="h-8 w-8" />,
+      title: "HoReCa фоновое видео для лобби, ресторанов и кафе",
+      description: "",
       use: "Создание атмосферы роскоши"
     },
     {
