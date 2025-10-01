@@ -11,7 +11,7 @@ const Footer = () => {
                 <Waves className="h-6 w-6 text-accent animate-ocean-wave" />
                 <span className="text-lg font-bold">OCEAN MEDIA PROJECT</span>
               </div>
-              <p className="text-primary-foreground/80 text-sm leading-relaxed flex-1">
+              <p className="text-primary-foreground/80 text-sm leading-relaxed flex-1 text-justify">
                 Наша компания предлагает сотни часов Relax видео необходимой длительности, а также потоковое вещание, превращающие экраны в инструмент для бизнеса. Мы создаём авторские видео ролики, адаптированные под вашу сферу: TV, реклама, и онлайн-сервисы, медклиники, wellness, отели и SPA... Контент сопровождается всеми авторскими правами и лицензиями. Готовое решение экономит время и даёт Вашему бизнесу новую ценность!
               </p>
             </div>
