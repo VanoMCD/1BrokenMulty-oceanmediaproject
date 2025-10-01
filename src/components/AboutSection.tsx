@@ -93,7 +93,7 @@ const AboutSection = () => {
                           <Globe className="h-5 w-5 text-primary" />
                         </div>
                         <div>
-                          <p className="font-semibold text-primary">Разрешение HD, FHD, 2K…</p>
+                          <p className="font-semibold text-primary">Формат HD, UHD, 4K</p>
                           <p className="text-muted-foreground text-sm">возможности есть, вопрос договоренностей</p>
                         </div>
                       </div>
