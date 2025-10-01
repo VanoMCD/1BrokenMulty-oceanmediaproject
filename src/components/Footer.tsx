@@ -4,31 +4,25 @@ const Footer = () => {
   return <footer className="bg-gradient-ocean text-primary-foreground py-12">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-start gap-8 mb-8">
+          <div className="flex flex-col md:flex-row justify-between items-stretch gap-8 mb-8">
             {/* Logo and Description */}
-            <div className="space-y-4 max-w-md">
+            <div className="flex flex-col space-y-4 max-w-md">
               <div className="flex items-center space-x-2">
                 <Waves className="h-6 w-6 text-accent animate-ocean-wave" />
                 <span className="text-lg font-bold">OCEAN MEDIA PROJECT</span>
               </div>
-              <p className="text-primary-foreground/80 text-sm">
-                Наша компания предлагает сотни часов Relax видео необходимой<br />
-                длительности, а также потоковое вещание, превращающие экраны<br />
-                в инструмент для бизнеса. Мы создаём авторские видео ролики,<br />
-                адаптированные под вашу сферу: TV, реклама, и онлайн-сервисы,<br />
-                медклиники, wellness, отели и SPA... Контент сопровождается всеми<br />
-                авторскими правами и лицензиями. Готовое решение экономит<br />
-                время и даёт Вашему бизнесу новую ценность!
+              <p className="text-primary-foreground/80 text-sm leading-relaxed flex-1">
+                Наша компания предлагает сотни часов Relax видео необходимой длительности, а также потоковое вещание, превращающие экраны в инструмент для бизнеса. Мы создаём авторские видео ролики, адаптированные под вашу сферу: TV, реклама, и онлайн-сервисы, медклиники, wellness, отели и SPA... Контент сопровождается всеми авторскими правами и лицензиями. Готовое решение экономит время и даёт Вашему бизнесу новую ценность!
               </p>
             </div>
 
             {/* Contact Info */}
-            <div className="space-y-4">
+            <div className="flex flex-col space-y-4">
               <div className="flex items-center space-x-2">
                 <Phone className="h-6 w-6 text-white animate-ocean-wave" />
                 <span className="text-lg font-bold">СВЯЖИТЕСЬ С НАМИ</span>
               </div>
-              <div className="space-y-2 text-sm text-primary-foreground/80">
+              <div className="space-y-2 text-sm text-primary-foreground/80 flex-1">
                 <div>📧 Email: <a href="mailto:o666699999@gmail.com" className="hover:text-accent transition-colors">o666699999@gmail.com</a></div>
                 <div>📱 WhatsApp: <a href="https://wa.me/381666699999" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">+381 66 66 999 99</a></div>
                 <div>📱 Telegram: <a href="https://t.me/+381666699999" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">+381 66 66 999 99</a></div>
