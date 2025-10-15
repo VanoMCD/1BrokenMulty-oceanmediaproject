@@ -6,10 +6,10 @@ const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { href: "#home", label: "Главная" },
-    { href: "#about", label: "О нас" },
-    { href: "#portfolio", label: "Каталог" },
-    { href: "#clients", label: "Для кого" },
+    { href: "#home", label: "Home" },
+    { href: "#about", label: "About Us" },
+    { href: "#portfolio", label: "Catalog" },
+    { href: "#clients", label: "For Whom" },
   ];
 
   return (
@@ -33,9 +33,9 @@ const Navigation = () => {
                 {item.label}
               </a>
             ))}
-            <a href="mailto:o666699999@gmail.com?subject=WEB%20Request&body=Здравствуйте!%0A%0AНас%20интересует%20Relax%20контент%20для%20показов%20на%20...%0AНам%20необходимо%20примерно%20...%20часов%0AТерритории%20использования%20-%20...">
+            <a href="mailto:o666699999@gmail.com?subject=WEB%20Request&body=Hello!%0A%0AWe%20are%20interested%20in%20Relax%20content%20for%20display%20on%20...%0AWe%20need%20approximately%20...%20hours%0ATerritories%20of%20use%20-%20...">
               <Button variant="default" className="bg-gradient-ocean text-primary-foreground shadow-ocean hover:shadow-depth transition-all duration-300">
-                Связаться
+                Contact Us
               </Button>
             </a>
           </div>
@@ -63,9 +63,9 @@ const Navigation = () => {
                   {item.label}
                 </a>
               ))}
-              <a href="mailto:o666699999@gmail.com?subject=WEB%20Request&body=Здравствуйте!%0A%0AНас%20интересует%20Relax%20контент%20для%20показов%20на%20...%0AНам%20необходимо%20примерно%20...%20часов%0AТерритории%20использования%20-%20...">
+              <a href="mailto:o666699999@gmail.com?subject=WEB%20Request&body=Hello!%0A%0AWe%20are%20interested%20in%20Relax%20content%20for%20display%20on%20...%0AWe%20need%20approximately%20...%20hours%0ATerritories%20of%20use%20-%20...">
                 <Button variant="default" className="bg-gradient-ocean text-primary-foreground w-full">
-                  Связаться
+                  Contact Us
                 </Button>
               </a>
             </div>

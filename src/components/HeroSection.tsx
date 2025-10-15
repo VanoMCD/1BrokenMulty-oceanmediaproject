@@ -21,12 +21,12 @@ const HeroSection = () => {
           OCEAN MEDIA PROJECT
         </h1>
         <h2 className="text-xl md:text-3xl mb-8 text-white font-light">
-          НОВОЕ ИЗМЕРЕНИЕ ВИДЕО: RELAX И AMBIENT КОНТЕНТ ДЛЯ ВАШЕГО БИЗНЕСА
+          A NEW DIMENSION IN VIDEO: RELAXATION & AMBIENT CONTENT FOR YOUR BUSINESS
         </h2>
         <div className="text-lg md:text-xl mb-12 text-white max-w-3xl mx-auto space-y-2">
-          <p className="text-white">📌 Профессиональная видеотека с глобальными правами</p>
-          <p className="text-white">📌 Уникальные видео подводного и окружающего мира</p>
-          <p className="text-white">📌 Контент для TV, Digital Signage, рекламы, SPA, отелей и других сфер</p>
+          <p className="text-white">📌 Professional video library with worldwide rights</p>
+          <p className="text-white">📌 Unique underwater and natural world footage</p>
+          <p className="text-white">📌 Content for TV, Digital Signage, advertising, SPA, hotels and more</p>
         </div>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
