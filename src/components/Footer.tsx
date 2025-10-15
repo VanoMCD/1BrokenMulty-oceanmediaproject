@@ -23,11 +23,11 @@ const Footer = () => {
                 <span className="text-lg font-bold">СВЯЖИТЕСЬ С НАМИ</span>
               </div>
               <div className="space-y-2 text-sm text-primary-foreground/80 flex-1">
-                <div>📧 Email: <a href="mailto:o666699999@gmail.com" className="hover:text-accent transition-colors">o666699999@gmail.com</a></div>
-                <div>📱 WhatsApp: <a href="https://wa.me/381666699999" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">+381 66 66 999 99</a></div>
-                <div>📱 Telegram: <a href="https://t.me/+381666699999" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">+381 66 66 999 99</a></div>
-                <div>🌍 Сайт: <a href="https://www.oceanmediaproject.com" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">www.oceanmediaproject.com</a></div>
-                <div>💼 LinkedIn: <a href="https://linkedin.com/in/oceanmediaproject" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Ocean Media Project</a></div>
+                <div>📧 Email: <a href="mailto:o666699999@gmail.com" className="hover:text-white hover:underline transition-colors">o666699999@gmail.com</a></div>
+                <div>📱 WhatsApp: <a href="https://wa.me/381666699999" target="_blank" rel="noopener noreferrer" className="hover:text-white hover:underline transition-colors">+381 66 66 999 99</a></div>
+                <div>📱 Telegram: <a href="https://t.me/+381666699999" target="_blank" rel="noopener noreferrer" className="hover:text-white hover:underline transition-colors">+381 66 66 999 99</a></div>
+                <div>🌍 Сайт: <a href="https://www.oceanmediaproject.com" target="_blank" rel="noopener noreferrer" className="hover:text-white hover:underline transition-colors">www.oceanmediaproject.com</a></div>
+                <div>💼 LinkedIn: <a href="https://linkedin.com/in/oceanmediaproject" target="_blank" rel="noopener noreferrer" className="hover:text-white hover:underline transition-colors">Ocean Media Project</a></div>
               </div>
             </div>
           </div>
@@ -39,13 +39,13 @@ const Footer = () => {
                 © {currentYear} Ocean Media Project. Все права защищены.
               </div>
               <div className="flex flex-wrap gap-4 justify-center md:justify-end mt-4 md:mt-0 text-xs">
-                <a href="https://www.youtube.com/@OceanMediaProject" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">YouTube</a>
-                <a href="https://rutube.ru/channel/61735052/" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Rutube</a>
-                <a href="https://stock.adobe.com/contributor/205029892/videodive" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Adobe Stock</a>
-                <a href="https://istockphoto.com/ru/portfolio/VIDEODIVE?assettype=film" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">iStockphoto</a>
-                <a href="https://pond5.com/artist/vmsartstudio619" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Pond5</a>
-                <a href="https://shutterstock.com/ru/g/vmsartstudio/video?rid=371249757" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Shutterstock</a>
-                <a href="https://creator-en.pixtastock.com/@videoton/footage" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Pixtastock</a>
+                <a href="https://www.youtube.com/@OceanMediaProject" target="_blank" rel="noopener noreferrer" className="hover:text-white hover:underline transition-colors">YouTube</a>
+                <a href="https://rutube.ru/channel/61735052/" target="_blank" rel="noopener noreferrer" className="hover:text-white hover:underline transition-colors">Rutube</a>
+                <a href="https://stock.adobe.com/contributor/205029892/videodive" target="_blank" rel="noopener noreferrer" className="hover:text-white hover:underline transition-colors">Adobe Stock</a>
+                <a href="https://istockphoto.com/ru/portfolio/VIDEODIVE?assettype=film" target="_blank" rel="noopener noreferrer" className="hover:text-white hover:underline transition-colors">iStockphoto</a>
+                <a href="https://pond5.com/artist/vmsartstudio619" target="_blank" rel="noopener noreferrer" className="hover:text-white hover:underline transition-colors">Pond5</a>
+                <a href="https://shutterstock.com/ru/g/vmsartstudio/video?rid=371249757" target="_blank" rel="noopener noreferrer" className="hover:text-white hover:underline transition-colors">Shutterstock</a>
+                <a href="https://creator-en.pixtastock.com/@videoton/footage" target="_blank" rel="noopener noreferrer" className="hover:text-white hover:underline transition-colors">Pixtastock</a>
               </div>
             </div>
           </div>
