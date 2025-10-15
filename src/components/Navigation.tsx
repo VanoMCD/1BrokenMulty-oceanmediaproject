@@ -19,7 +19,7 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <Waves className="h-8 w-8 text-accent animate-ocean-wave" />
-            <span className="text-xl font-bold text-primary">OCEAN MEDIA GROUP</span>
+            <span className="text-xl font-bold text-primary">OCEAN MEDIA PROJECT</span>
           </div>
 
           {/* Desktop Navigation */}
