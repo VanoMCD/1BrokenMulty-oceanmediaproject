@@ -1,7 +1,7 @@
 import { Waves, Phone } from "lucide-react";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  return <footer className="bg-gradient-ocean text-primary-foreground py-12">
+  return <footer id="contact" className="bg-gradient-ocean text-primary-foreground py-12">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-stretch gap-8 mb-8">
