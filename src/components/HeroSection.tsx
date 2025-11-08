@@ -29,7 +29,7 @@ const HeroSection = () => {
           <p className="text-white">📌 Content for TV, Digital Signage, advertising, SPA, hotels and more</p>
         </div>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <div className="flex justify-center items-center">
           <a 
             href="https://www.youtube.com/@OceanMediaProject"
             target="_blank"
@@ -37,28 +37,12 @@ const HeroSection = () => {
           >
             <Button 
               size="lg" 
-              className="bg-red-600 hover:bg-red-700 text-white shadow-depth hover:shadow-ocean transition-all duration-500 transform hover:scale-105"
+              className="bg-red-600 hover:bg-red-700 text-white shadow-depth hover:shadow-ocean transition-all duration-500 transform hover:scale-105 px-12"
             >
               <svg className="mr-2 h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
               </svg>
               YouTube
-            </Button>
-          </a>
-          <a 
-            href="https://rutube.ru/channel/61735052/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Button 
-              size="lg"
-              className="bg-blue-600 hover:bg-blue-700 text-white shadow-depth hover:shadow-ocean transition-all duration-500 transform hover:scale-105"
-            >
-              <svg className="mr-2 h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M19.7 7.3c-.4-.4-1-.4-1.4 0L12 13.6 5.7 7.3c-.4-.4-1-.4-1.4 0s-.4 1 0 1.4l7 7c.2.2.4.3.7.3s.5-.1.7-.3l7-7c.4-.4.4-1 0-1.4z"/>
-                <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" fill="none"/>
-              </svg>
-              RuTube
             </Button>
           </a>
         </div>
