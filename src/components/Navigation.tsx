@@ -16,7 +16,11 @@ const Navigation = () => {
     e.preventDefault();
     const target = document.querySelector(href);
     if (target) {
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      const targetPosition = target.getBoundingClientRect().top + window.scrollY - 80;
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth'
+      });
       setIsOpen(false);
     }
   };
@@ -46,11 +50,14 @@ const Navigation = () => {
             <Button 
               variant="default" 
               className="bg-gradient-ocean text-primary-foreground shadow-ocean hover:shadow-depth transition-all duration-300 cursor-pointer"
-              onClick={(e) => {
-                e.preventDefault();
+              onClick={() => {
                 const target = document.querySelector('#contact');
                 if (target) {
-                  target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                  const targetPosition = target.getBoundingClientRect().top + window.scrollY - 80;
+                  window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                  });
                 }
               }}
             >
@@ -84,11 +91,14 @@ const Navigation = () => {
               <Button 
                 variant="default" 
                 className="bg-gradient-ocean text-primary-foreground w-full cursor-pointer"
-                onClick={(e) => {
-                  e.preventDefault();
+                onClick={() => {
                   const target = document.querySelector('#contact');
                   if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    const targetPosition = target.getBoundingClientRect().top + window.scrollY - 80;
+                    window.scrollTo({
+                      top: targetPosition,
+                      behavior: 'smooth'
+                    });
                     setIsOpen(false);
                   }
                 }}
