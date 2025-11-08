@@ -9,9 +9,9 @@ const PortfolioSection = () => {
     link: "https://www.youtube.com/@OceanMediaProject",
     description: "Quality content for viewing"
   }, {
-    name: "📺 Rutube Channel", 
-    link: "https://rutube.ru/channel/61735052/",
-    description: "Russian video platform"
+    name: "📺 Vimeo Channel", 
+    link: "https://vimeo.com/oceanmediaproject",
+    description: "Professional video platform"
   }, {
     name: "🎞️ Shutterstock",
     link: "https://shutterstock.com/ru/g/vmsartstudio/video?rid=371249757",
