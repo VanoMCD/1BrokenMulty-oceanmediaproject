@@ -9,11 +9,11 @@ import fr from './locales/fr.json';
 import sr from './locales/sr.json';
 
 export const languages = {
-  de: { name: 'Deutsch', flag: '🇩🇪', order: 1 },
-  en: { name: 'English', flag: '🇬🇧', order: 2 },
+  de: { name: 'Deutsch', flag: '🇩🇪', order: 2 },
+  en: { name: 'English', flag: '🇬🇧', order: 5 },
   es: { name: 'Español', flag: '🇪🇸', order: 3 },
   fr: { name: 'Français', flag: '🇫🇷', order: 4 },
-  pt: { name: 'Português', flag: '🇧🇷', order: 5 },
+  pt: { name: 'Português', flag: '🇧🇷', order: 1 },
   sr: { name: 'Srpski', flag: '🇷🇸', order: 6 }
 };
 
