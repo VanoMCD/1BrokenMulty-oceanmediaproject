@@ -50,16 +50,18 @@ const LanguageSwitcher = () => {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="w-56">
-        {Object.entries(languages).map(([code, { name, flag }]) => (
-          <DropdownMenuItem
-            key={code}
-            onClick={() => changeLanguage(code)}
-            className={`cursor-pointer ${i18n.language === code ? 'bg-accent/10' : ''}`}
-          >
-            <span className="mr-2">{flag}</span>
-            {name}
-          </DropdownMenuItem>
-        ))}
+        {Object.entries(languages)
+          .sort(([, a], [, b]) => a.name.localeCompare(b.name))
+          .map(([code, { name, flag }]) => (
+            <DropdownMenuItem
+              key={code}
+              onClick={() => changeLanguage(code)}
+              className={`cursor-pointer ${i18n.language === code ? 'bg-accent/10' : ''}`}
+            >
+              <span className="mr-2">{flag}</span>
+              {name}
+            </DropdownMenuItem>
+          ))}
       </DropdownMenuContent>
     </DropdownMenu>
   );

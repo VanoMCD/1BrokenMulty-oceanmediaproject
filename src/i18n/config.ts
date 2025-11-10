@@ -38,8 +38,11 @@ i18n
     detection: {
       order: ['path', 'localStorage', 'navigator'],
       lookupFromPathIndex: 0,
-      caches: ['localStorage']
-    }
+      caches: ['localStorage'],
+      lookupQuerystring: 'lng'
+    },
+    load: 'currentOnly',
+    supportedLngs: ['en', 'pt-br', 'es', 'de', 'fr', 'sr']
   });
 
 export default i18n;
