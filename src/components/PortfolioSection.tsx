@@ -100,23 +100,23 @@ const PortfolioSection = () => {
             </p>
             
             {/* Platforms Info */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
               {platforms.map((platform, index) => (
                 <a 
                   key={index} 
                   href={platform.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`${platform.bgColor} border border-primary/10 rounded-xl p-6 hover:shadow-xl hover:scale-105 transition-all duration-300 group cursor-pointer`}
+                  className={`${platform.bgColor} border border-primary/10 rounded-xl p-4 hover:shadow-xl hover:scale-105 transition-all duration-300 group cursor-pointer`}
                 >
-                  <div className="flex items-center gap-4">
-                    <div className={`${platform.iconBg} ${platform.iconColor} p-3 rounded-full flex-shrink-0`}>
-                      {platform.icon}
+                  <div className="text-left">
+                    <div className="flex items-center gap-2 mb-1">
+                      <div className={`${platform.iconBg} ${platform.iconColor} p-1.5 rounded-full flex-shrink-0`}>
+                        {platform.icon}
+                      </div>
+                      <h4 className="font-bold text-primary text-sm">{platform.name}</h4>
                     </div>
-                    <div className="text-left">
-                      <h4 className="font-bold text-primary text-base mb-2">{platform.name}</h4>
-                      <p className="text-sm text-muted-foreground leading-relaxed">{platform.subtitle}</p>
-                    </div>
+                    <p className="text-xs text-muted-foreground leading-relaxed pl-8">{platform.subtitle}</p>
                   </div>
                 </a>
               ))}
