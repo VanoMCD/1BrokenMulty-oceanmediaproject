@@ -34,7 +34,7 @@ const PortfolioSection = () => {
     name: "Adobe Stock",
     link: "https://stock.adobe.com/contributor/205029892/videodive",
     description: "Download high-quality footage for creatives",
-    icon: "https://logo.clearbit.com/stock.adobe.com"
+    icon: "https://cdn.simpleicons.org/adobestock/DD1144"
   }, {
     name: "Pond5 (Vmsartstudio619)",
     link: "https://pond5.com/artist/vmsartstudio619", 
