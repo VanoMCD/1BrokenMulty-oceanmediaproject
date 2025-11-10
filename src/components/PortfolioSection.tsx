@@ -2,122 +2,67 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { SiYoutube, SiVimeo, SiAdobe, SiShutterstock } from "react-icons/si";
-import { FaVideo, FaImages } from "react-icons/fa";
-
+import { Play, Eye } from "lucide-react";
 const PortfolioSection = () => {
-  const platforms = [
-    {
-      name: "YouTube Channel",
-      subtitle: "Watch us on YouTube",
-      link: "https://www.youtube.com/@OceanMediaProject",
-      bgColor: "bg-red-50 dark:bg-red-950/20",
-      iconColor: "text-red-600",
-      iconBg: "bg-white",
-      icon: <SiYoutube className="h-5 w-5" />
-    },
-    {
-      name: "Vimeo",
-      subtitle: "Our collection on Vimeo",
-      link: "https://vimeo.com/oceanmediaproject",
-      bgColor: "bg-blue-50 dark:bg-blue-950/20",
-      iconColor: "text-blue-600",
-      iconBg: "bg-white",
-      icon: <SiVimeo className="h-5 w-5" />
-    },
-    {
-      name: "Pixtastock",
-      subtitle: "Japanese stock footage platform",
-      link: "https://creator-en.pixtastock.com/@videoton/footage",
-      bgColor: "bg-pink-50 dark:bg-pink-950/20",
-      iconColor: "text-pink-600",
-      iconBg: "bg-white",
-      icon: <FaVideo className="h-5 w-5" />
-    },
-    {
-      name: "iStockphoto",
-      subtitle: "Professional stock footage",
-      link: "https://istockphoto.com/ru/portfolio/VIDEODIVE?assettype=film",
-      bgColor: "bg-emerald-50 dark:bg-emerald-950/20",
-      iconColor: "text-emerald-600",
-      iconBg: "bg-white",
-      icon: <FaImages className="h-5 w-5" />
-    },
-    {
-      name: "Shutterstock",
-      subtitle: "Premium content for professionals",
-      link: "https://shutterstock.com/ru/g/vmsartstudio/video?rid=371249757",
-      bgColor: "bg-red-50 dark:bg-red-950/20",
-      iconColor: "text-red-600",
-      iconBg: "bg-white",
-      icon: <SiShutterstock className="h-5 w-5" />
-    },
-    {
-      name: "Pond5 - Vmsartstudio",
-      subtitle: "Vmsartstudio619 content",
-      link: "https://pond5.com/artist/vmsartstudio619",
-      bgColor: "bg-cyan-50 dark:bg-cyan-950/20",
-      iconColor: "text-cyan-600",
-      iconBg: "bg-white",
-      icon: <FaVideo className="h-5 w-5" />
-    },
-    {
-      name: "Adobe Stock - Videodive",
-      subtitle: "Premium content for creative projects",
-      link: "https://stock.adobe.com/contributor/205029892/videodive",
-      bgColor: "bg-rose-50 dark:bg-rose-950/20",
-      iconColor: "text-rose-700",
-      iconBg: "bg-white",
-      icon: <SiAdobe className="h-5 w-5" />
-    },
-    {
-      name: "Pond5 - Videodive",
-      subtitle: "Videodive content",
-      link: "https://pond5.com/artist/videodive",
-      bgColor: "bg-cyan-50 dark:bg-cyan-950/20",
-      iconColor: "text-cyan-600",
-      iconBg: "bg-white",
-      icon: <FaVideo className="h-5 w-5" />
-    },
-    {
-      name: "Adobe Stock - Ocean Media",
-      subtitle: "Ocean Media Project content",
-      link: "https://stock.adobe.com/contributor/205029892/videodive",
-      bgColor: "bg-rose-50 dark:bg-rose-950/20",
-      iconColor: "text-rose-700",
-      iconBg: "bg-white",
-      icon: <SiAdobe className="h-5 w-5" />
-    }
-  ];
+  const platforms = [{
+    name: "📺 YouTube Channel",
+    link: "https://www.youtube.com/@OceanMediaProject",
+    description: "Quality content for viewing"
+  }, {
+    name: "📺 Vimeo", 
+    link: "https://vimeo.com/oceanmediaproject",
+    description: "Professional video platform"
+  }, {
+    name: "🎞️ Shutterstock",
+    link: "https://shutterstock.com/ru/g/vmsartstudio/video?rid=371249757",
+    description: "Premium content for professionals"
+  }, {
+    name: "🎥 Pond5 (Videodive)",
+    link: "https://pond5.com/artist/videodive", 
+    description: "Videodive content"
+  }, {
+    name: "🎥 Pond5 (Videoton)",
+    link: "https://pond5.com/artist/videoton", 
+    description: "Videoton content"
+  }, {
+    name: "🎥 Pond5 (Vmsartstudio619)",
+    link: "https://pond5.com/artist/vmsartstudio619", 
+    description: "Vmsartstudio619 content"
+  }, {
+    name: "📽 Adobe Stock",
+    link: "https://stock.adobe.com/contributor/205029892/videodive",
+    description: "Quality content for creative projects"
+  }, {
+    name: "📷 iStockphoto",
+    link: "https://istockphoto.com/ru/portfolio/VIDEODIVE?assettype=film",
+    description: "Professional video materials"
+  }, {
+    name: "🎬 Pixtastock",
+    link: "https://creator-en.pixtastock.com/@videoton/footage",
+    description: "Japanese stock content platform"
+  }];
 
   return <section id="platforms" className="pt-1 pb-5 bg-gradient-portfolio">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-8">
+          <div className="text-center mb-4">
             <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">WHERE CAN YOU VIEW OUR CONTENT?</h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-12">
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
               Subscribe and enjoy quality content!
             </p>
             
             {/* Platforms Info */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl mx-auto">
               {platforms.map((platform, index) => (
                 <a 
                   key={index} 
                   href={platform.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`${platform.bgColor} border border-primary/10 rounded-xl p-4 hover:shadow-xl hover:scale-105 transition-all duration-300 group cursor-pointer`}
+                  className="bg-card border border-accent/20 rounded-lg p-4 text-center hover:border-accent/40 transition-colors duration-300 group"
                 >
-                  <div className="text-center">
-                    <div className="flex items-center justify-center gap-2 mb-1">
-                      <div className={`${platform.iconBg} ${platform.iconColor} p-1.5 rounded-full flex-shrink-0`}>
-                        {platform.icon}
-                      </div>
-                      <h4 className="font-bold text-primary text-sm">{platform.name}</h4>
-                    </div>
-                    <p className="text-xs text-muted-foreground leading-relaxed">{platform.subtitle}</p>
-                  </div>
+                  <div className="font-semibold text-primary group-hover:text-accent transition-colors">{platform.name}</div>
+                  <div className="text-sm text-muted-foreground">{platform.description}</div>
                 </a>
               ))}
             </div>
