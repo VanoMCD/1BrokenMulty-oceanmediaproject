@@ -2,7 +2,8 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Play, Eye, Video, Image, Film } from "lucide-react";
+import { SiYoutube, SiVimeo, SiAdobe, SiShutterstock } from "react-icons/si";
+import { FaVideo, FaImages } from "react-icons/fa";
 
 const PortfolioSection = () => {
   const platforms = [
@@ -13,7 +14,7 @@ const PortfolioSection = () => {
       bgColor: "bg-red-50 dark:bg-red-950/20",
       iconColor: "text-red-600",
       iconBg: "bg-white",
-      icon: <Play className="h-5 w-5" fill="currentColor" />
+      icon: <SiYoutube className="h-5 w-5" />
     },
     {
       name: "Vimeo",
@@ -22,7 +23,7 @@ const PortfolioSection = () => {
       bgColor: "bg-blue-50 dark:bg-blue-950/20",
       iconColor: "text-blue-600",
       iconBg: "bg-white",
-      icon: <Video className="h-5 w-5" />
+      icon: <SiVimeo className="h-5 w-5" />
     },
     {
       name: "Pixtastock",
@@ -31,7 +32,7 @@ const PortfolioSection = () => {
       bgColor: "bg-pink-50 dark:bg-pink-950/20",
       iconColor: "text-pink-600",
       iconBg: "bg-white",
-      icon: <Image className="h-5 w-5" />
+      icon: <FaVideo className="h-5 w-5" />
     },
     {
       name: "iStockphoto",
@@ -40,7 +41,7 @@ const PortfolioSection = () => {
       bgColor: "bg-emerald-50 dark:bg-emerald-950/20",
       iconColor: "text-emerald-600",
       iconBg: "bg-white",
-      icon: <Film className="h-5 w-5" />
+      icon: <FaImages className="h-5 w-5" />
     },
     {
       name: "Shutterstock",
@@ -49,7 +50,7 @@ const PortfolioSection = () => {
       bgColor: "bg-red-50 dark:bg-red-950/20",
       iconColor: "text-red-600",
       iconBg: "bg-white",
-      icon: <Eye className="h-5 w-5" />
+      icon: <SiShutterstock className="h-5 w-5" />
     },
     {
       name: "Pond5 - Vmsartstudio",
@@ -58,7 +59,7 @@ const PortfolioSection = () => {
       bgColor: "bg-cyan-50 dark:bg-cyan-950/20",
       iconColor: "text-cyan-600",
       iconBg: "bg-white",
-      icon: <Video className="h-5 w-5" />
+      icon: <FaVideo className="h-5 w-5" />
     },
     {
       name: "Adobe Stock - Videodive",
@@ -67,7 +68,7 @@ const PortfolioSection = () => {
       bgColor: "bg-rose-50 dark:bg-rose-950/20",
       iconColor: "text-rose-700",
       iconBg: "bg-white",
-      icon: <Film className="h-5 w-5" />
+      icon: <SiAdobe className="h-5 w-5" />
     },
     {
       name: "Pond5 - Videodive",
@@ -76,7 +77,7 @@ const PortfolioSection = () => {
       bgColor: "bg-cyan-50 dark:bg-cyan-950/20",
       iconColor: "text-cyan-600",
       iconBg: "bg-white",
-      icon: <Video className="h-5 w-5" />
+      icon: <FaVideo className="h-5 w-5" />
     },
     {
       name: "Adobe Stock - Ocean Media",
@@ -85,7 +86,7 @@ const PortfolioSection = () => {
       bgColor: "bg-rose-50 dark:bg-rose-950/20",
       iconColor: "text-rose-700",
       iconBg: "bg-white",
-      icon: <Film className="h-5 w-5" />
+      icon: <SiAdobe className="h-5 w-5" />
     }
   ];
 
