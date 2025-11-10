@@ -10,12 +10,12 @@ import fr from './locales/fr.json';
 import sr from './locales/sr.json';
 
 export const languages = {
-  en: { name: 'English', flag: '🇬🇧' },
-  'pt-br': { name: 'Português (Brasil)', flag: '🇧🇷' },
-  es: { name: 'Español', flag: '🇪🇸' },
-  de: { name: 'Deutsch', flag: '🇩🇪' },
-  fr: { name: 'Français', flag: '🇫🇷' },
-  sr: { name: 'Српски', flag: '🇷🇸' }
+  'pt-br': { name: 'Português (Brasil)', flag: '🇧🇷', order: 1 },
+  en: { name: 'English', flag: '🇬🇧', order: 2 },
+  de: { name: 'Deutsch', flag: '🇩🇪', order: 3 },
+  es: { name: 'Español', flag: '🇪🇸', order: 4 },
+  fr: { name: 'Français', flag: '🇫🇷', order: 5 },
+  sr: { name: 'Srpski', flag: '🇷🇸', order: 6 }
 };
 
 i18n

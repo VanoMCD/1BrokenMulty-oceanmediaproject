@@ -51,7 +51,7 @@ const LanguageSwitcher = () => {
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="w-56">
         {Object.entries(languages)
-          .sort(([, a], [, b]) => a.name.localeCompare(b.name))
+          .sort(([, a], [, b]) => a.order - b.order)
           .map(([code, { name, flag }]) => (
             <DropdownMenuItem
               key={code}
