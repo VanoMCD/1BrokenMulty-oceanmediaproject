@@ -109,11 +109,11 @@ const PortfolioSection = () => {
                   rel="noopener noreferrer"
                   className={`${platform.bgColor} border border-primary/10 rounded-xl p-6 hover:shadow-xl hover:scale-105 transition-all duration-300 group cursor-pointer`}
                 >
-                  <div className="flex flex-col items-center text-center gap-3">
-                    <div className={`${platform.iconBg} ${platform.iconColor} p-3 rounded-full`}>
+                  <div className="flex items-center gap-4">
+                    <div className={`${platform.iconBg} ${platform.iconColor} p-3 rounded-full flex-shrink-0`}>
                       {platform.icon}
                     </div>
-                    <div>
+                    <div className="text-left">
                       <h4 className="font-bold text-primary text-base mb-2">{platform.name}</h4>
                       <p className="text-sm text-muted-foreground leading-relaxed">{platform.subtitle}</p>
                     </div>
