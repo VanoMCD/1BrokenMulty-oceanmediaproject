@@ -1,45 +1,50 @@
 
-import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Play, Eye } from "lucide-react";
 const PortfolioSection = () => {
   const platforms = [{
-    name: "📺 YouTube Channel",
+    name: "YouTube Channel",
     link: "https://www.youtube.com/@OceanMediaProject",
-    description: "Quality content for viewing"
+    description: "Watch our latest underwater adventures!",
+    icon: "https://cdn.simpleicons.org/youtube/FF0000"
   }, {
-    name: "📺 Vimeo", 
+    name: "Vimeo", 
     link: "https://vimeo.com/oceanmediaproject",
-    description: "Professional video platform"
+    description: "Discover premium ocean cinematography",
+    icon: "https://cdn.simpleicons.org/vimeo/1AB7EA"
   }, {
-    name: "🎞️ Shutterstock",
+    name: "Shutterstock",
     link: "https://shutterstock.com/ru/g/vmsartstudio/video?rid=371249757",
-    description: "Premium content for professionals"
+    description: "License professional footage for your projects",
+    icon: "https://cdn.simpleicons.org/shutterstock/EE3124"
   }, {
-    name: "🎥 Pond5 (Videodive)",
+    name: "Pond5 (Videodive)",
     link: "https://pond5.com/artist/videodive", 
-    description: "Videodive content"
+    description: "Explore our Videodive collection",
+    icon: "https://cdn.simpleicons.org/pond5/00A3E0"
   }, {
-    name: "🎥 Pond5 (Videoton)",
-    link: "https://pond5.com/artist/videoton", 
-    description: "Videoton content"
-  }, {
-    name: "🎥 Pond5 (Vmsartstudio619)",
-    link: "https://pond5.com/artist/vmsartstudio619", 
-    description: "Vmsartstudio619 content"
-  }, {
-    name: "📽 Adobe Stock",
-    link: "https://stock.adobe.com/contributor/205029892/videodive",
-    description: "Quality content for creative projects"
-  }, {
-    name: "📷 iStockphoto",
+    name: "iStockphoto",
     link: "https://istockphoto.com/ru/portfolio/VIDEODIVE?assettype=film",
-    description: "Professional video materials"
+    description: "Get stunning stock videos instantly",
+    icon: "https://cdn.simpleicons.org/istock/000000"
   }, {
-    name: "🎬 Pixtastock",
+    name: "Pond5 (Videoton)",
+    link: "https://pond5.com/artist/videoton", 
+    description: "Browse our Videoton portfolio",
+    icon: "https://cdn.simpleicons.org/pond5/00A3E0"
+  }, {
+    name: "Pond5 (Vmsartstudio619)",
+    link: "https://pond5.com/artist/vmsartstudio619", 
+    description: "Check out Vmsartstudio619 exclusive content",
+    icon: "https://cdn.simpleicons.org/pond5/00A3E0"
+  }, {
+    name: "Adobe Stock",
+    link: "https://stock.adobe.com/contributor/205029892/videodive",
+    description: "Download high-quality footage for creatives",
+    icon: "https://cdn.simpleicons.org/adobecreativecloud/DA1F26"
+  }, {
+    name: "Pixtastock",
     link: "https://creator-en.pixtastock.com/@videoton/footage",
-    description: "Japanese stock content platform"
+    description: "Access our Japanese market collection",
+    icon: "https://cdn.simpleicons.org/pixiv/0096FA"
   }];
 
   return <section id="platforms" className="pt-1 pb-5 bg-gradient-portfolio">
@@ -59,10 +64,13 @@ const PortfolioSection = () => {
                   href={platform.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-card border border-accent/20 rounded-lg p-4 text-center hover:border-accent/40 transition-colors duration-300 group"
+                  className="bg-card border border-accent/20 rounded-lg p-4 text-center hover:border-accent/40 hover:shadow-lg transition-all duration-300 group"
                 >
-                  <div className="font-semibold text-primary group-hover:text-accent transition-colors">{platform.name}</div>
-                  <div className="text-sm text-muted-foreground">{platform.description}</div>
+                  <div className="flex items-center justify-center gap-3 mb-2">
+                    <img src={platform.icon} alt={platform.name} className="w-6 h-6" />
+                    <h4 className="font-semibold text-primary group-hover:text-accent transition-colors">{platform.name}</h4>
+                  </div>
+                  <p className="text-sm text-muted-foreground">{platform.description}</p>
                 </a>
               ))}
             </div>
