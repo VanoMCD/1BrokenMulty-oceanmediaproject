@@ -52,7 +52,7 @@ const App = () => {
         <BrowserRouter>
           <Routes>
             {/* Redirect root to default language */}
-            <Route path="/" element={<Navigate to="/pt-br" replace />} />
+            <Route path="/" element={<Navigate to="/pt" replace />} />
             
             {/* Language-specific routes */}
             <Route path="/:lang" element={<LanguageWrapper />} />
