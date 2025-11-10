@@ -24,7 +24,7 @@ const PortfolioSection = () => {
     name: "iStockphoto",
     link: "https://istockphoto.com/ru/portfolio/VIDEODIVE?assettype=film",
     description: "Get stunning stock videos instantly",
-    icon: "https://cdn.simpleicons.org/istockphoto/00C7B1"
+    icon: "https://cdn.simpleicons.org/gettyimages/FF0000"
   }, {
     name: "Pond5 (Videoton)",
     link: "https://pond5.com/artist/videoton", 
@@ -34,7 +34,7 @@ const PortfolioSection = () => {
     name: "Adobe Stock",
     link: "https://stock.adobe.com/contributor/205029892/videodive",
     description: "Download high-quality footage for creatives",
-    icon: "https://cdn.simpleicons.org/adobe/FF0000"
+    icon: "https://cdn.simpleicons.org/adobestock/FF0000"
   }, {
     name: "Pond5 (Vmsartstudio619)",
     link: "https://pond5.com/artist/vmsartstudio619", 
