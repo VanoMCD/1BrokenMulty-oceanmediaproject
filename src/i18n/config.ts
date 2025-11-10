@@ -1,6 +1,5 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
-import LanguageDetector from 'i18next-browser-languagedetector';
 
 import en from './locales/en.json';
 import ptBr from './locales/pt-br.json';
@@ -19,7 +18,6 @@ export const languages = {
 };
 
 i18n
-  .use(LanguageDetector)
   .use(initReactI18next)
   .init({
     resources: {
@@ -30,19 +28,17 @@ i18n
       fr: { translation: fr },
       sr: { translation: sr }
     },
+    lng: 'en',
     fallbackLng: 'en',
-    debug: false,
+    debug: true,
     interpolation: {
       escapeValue: false
     },
-    detection: {
-      order: ['path', 'localStorage', 'navigator'],
-      lookupFromPathIndex: 0,
-      caches: ['localStorage'],
-      lookupQuerystring: 'lng'
-    },
-    load: 'currentOnly',
-    supportedLngs: ['en', 'pt-br', 'es', 'de', 'fr', 'sr']
+    supportedLngs: ['en', 'pt-br', 'es', 'de', 'fr', 'sr'],
+    nonExplicitSupportedLngs: false,
+    react: {
+      useSuspense: false
+    }
   });
 
 export default i18n;

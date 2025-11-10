@@ -14,20 +14,28 @@ const queryClient = new QueryClient();
 
 const LanguageWrapper = () => {
   const { lang } = useParams<{ lang: string }>();
-  const { i18n } = useTranslation();
+  const { i18n, ready } = useTranslation();
   const navigate = useNavigate();
 
   useEffect(() => {
-    if (lang && Object.keys(languages).includes(lang)) {
-      if (i18n.language !== lang) {
-        i18n.changeLanguage(lang);
+    const changeLang = async () => {
+      if (lang && Object.keys(languages).includes(lang)) {
+        if (i18n.language !== lang) {
+          await i18n.changeLanguage(lang);
+        }
       }
-    }
-  }, [lang, i18n]);
+    };
+    changeLang();
+  }, [lang, i18n, navigate]);
 
   // Redirect invalid language codes
   if (lang && !Object.keys(languages).includes(lang)) {
     return <Navigate to="/en" replace />;
+  }
+
+  // Don't render until language is loaded
+  if (!ready || i18n.language !== lang) {
+    return null;
   }
 
   return <Index />;
