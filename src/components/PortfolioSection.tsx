@@ -7,85 +7,85 @@ import { Play, Eye, Video, Image, Film } from "lucide-react";
 const PortfolioSection = () => {
   const platforms = [
     {
-      name: "YouTube-канал",
-      subtitle: "Смотрите нас на YouTube",
+      name: "YouTube Channel",
+      subtitle: "Watch us on YouTube",
       link: "https://www.youtube.com/@OceanMediaProject",
       bgColor: "bg-red-50 dark:bg-red-950/20",
       iconColor: "text-red-600",
       iconBg: "bg-white",
-      icon: <Play className="h-6 w-6" fill="currentColor" />
+      icon: <Play className="h-5 w-5" fill="currentColor" />
     },
     {
       name: "Vimeo",
-      subtitle: "Наша коллекция на Vimeo",
+      subtitle: "Our collection on Vimeo",
       link: "https://vimeo.com/oceanmediaproject",
       bgColor: "bg-blue-50 dark:bg-blue-950/20",
       iconColor: "text-blue-600",
       iconBg: "bg-white",
-      icon: <Video className="h-6 w-6" />
+      icon: <Video className="h-5 w-5" />
     },
     {
       name: "Pixtastock",
-      subtitle: "Японская платформа для стокового контента",
+      subtitle: "Japanese stock footage platform",
       link: "https://creator-en.pixtastock.com/@videoton/footage",
       bgColor: "bg-pink-50 dark:bg-pink-950/20",
       iconColor: "text-pink-600",
       iconBg: "bg-white",
-      icon: <Image className="h-6 w-6" />
+      icon: <Image className="h-5 w-5" />
     },
     {
       name: "iStockphoto",
-      subtitle: "Профессиональные видеоматериалы",
+      subtitle: "Professional stock footage",
       link: "https://istockphoto.com/ru/portfolio/VIDEODIVE?assettype=film",
       bgColor: "bg-emerald-50 dark:bg-emerald-950/20",
       iconColor: "text-emerald-600",
       iconBg: "bg-white",
-      icon: <Film className="h-6 w-6" />
+      icon: <Film className="h-5 w-5" />
     },
     {
       name: "Adobe Stock - Ocean Media",
-      subtitle: "Ocean Media Project контент",
+      subtitle: "Ocean Media Project content",
       link: "https://stock.adobe.com/contributor/205029892/videodive",
       bgColor: "bg-rose-50 dark:bg-rose-950/20",
       iconColor: "text-rose-700",
       iconBg: "bg-white",
-      icon: <Film className="h-6 w-6" />
+      icon: <Film className="h-5 w-5" />
     },
     {
       name: "Pond5 - Vmsartstudio",
-      subtitle: "Vmsartstudio619 контент",
+      subtitle: "Vmsartstudio619 content",
       link: "https://pond5.com/artist/vmsartstudio619",
       bgColor: "bg-cyan-50 dark:bg-cyan-950/20",
       iconColor: "text-cyan-600",
       iconBg: "bg-white",
-      icon: <Video className="h-6 w-6" />
+      icon: <Video className="h-5 w-5" />
     },
     {
       name: "Adobe Stock - Videodive",
-      subtitle: "Качественный контент для креативных проектов",
+      subtitle: "Premium content for creative projects",
       link: "https://stock.adobe.com/contributor/205029892/videodive",
       bgColor: "bg-rose-50 dark:bg-rose-950/20",
       iconColor: "text-rose-700",
       iconBg: "bg-white",
-      icon: <Film className="h-6 w-6" />
-    },
-    {
-      name: "Shutterstock",
-      subtitle: "Премиум-контент для профессионалов",
-      link: "https://shutterstock.com/ru/g/vmsartstudio/video?rid=371249757",
-      bgColor: "bg-red-50 dark:bg-red-950/20",
-      iconColor: "text-red-600",
-      iconBg: "bg-white",
-      icon: <Eye className="h-6 w-6" />
+      icon: <Film className="h-5 w-5" />
     },
     {
       name: "Pond5 - Videodive",
-      subtitle: "Videodive контент",
+      subtitle: "Videodive content",
       link: "https://pond5.com/artist/videodive",
       bgColor: "bg-cyan-50 dark:bg-cyan-950/20",
       iconColor: "text-cyan-600",
       iconBg: "bg-white",
-      icon: <Video className="h-6 w-6" />
+      icon: <Video className="h-5 w-5" />
+    },
+    {
+      name: "Shutterstock",
+      subtitle: "Premium content for professionals",
+      link: "https://shutterstock.com/ru/g/vmsartstudio/video?rid=371249757",
+      bgColor: "bg-red-50 dark:bg-red-950/20",
+      iconColor: "text-red-600",
+      iconBg: "bg-white",
+      icon: <Eye className="h-5 w-5" />
     }
   ];
 
@@ -106,15 +106,15 @@ const PortfolioSection = () => {
                   href={platform.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`${platform.bgColor} border border-primary/10 rounded-xl p-5 hover:shadow-lg transition-all duration-300 group cursor-pointer`}
+                  className={`${platform.bgColor} border border-primary/10 rounded-xl p-4 hover:shadow-lg transition-all duration-300 group cursor-pointer`}
                 >
-                  <div className="flex flex-col items-center text-center gap-3">
-                    <div className={`${platform.iconBg} ${platform.iconColor} p-3 rounded-full`}>
+                  <div className="flex items-start gap-3">
+                    <div className={`${platform.iconBg} ${platform.iconColor} p-2 rounded-full flex-shrink-0`}>
                       {platform.icon}
                     </div>
-                    <div>
-                      <h4 className="font-bold text-primary text-base mb-1">{platform.name}</h4>
-                      <p className="text-sm text-muted-foreground">{platform.subtitle}</p>
+                    <div className="text-left flex-1">
+                      <h4 className="font-bold text-primary text-sm mb-1">{platform.name}</h4>
+                      <p className="text-xs text-muted-foreground leading-snug">{platform.subtitle}</p>
                     </div>
                   </div>
                 </a>
