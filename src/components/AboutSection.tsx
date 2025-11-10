@@ -62,7 +62,7 @@ const AboutSection = () => {
                     <CardContent className="p-0">
                       <div className="flex items-start gap-3">
                         <div className="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
-                          <CheckCircle className="h-5 w-5 text-primary" />
+                          <CheckCircle className="h-5 w-5 text-accent" />
                         </div>
                         <div>
                           <p className="font-semibold text-primary">Ready-Made Video Content</p>
@@ -76,7 +76,7 @@ const AboutSection = () => {
                     <CardContent className="p-0">
                       <div className="flex items-start gap-3">
                         <div className="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
-                          <Award className="h-5 w-5 text-primary" />
+                          <Award className="h-5 w-5 text-accent" />
                         </div>
                         <div>
                           <p className="font-semibold text-primary">All Types of Licenses & Terms</p>
@@ -90,7 +90,7 @@ const AboutSection = () => {
                     <CardContent className="p-0">
                       <div className="flex items-start gap-3">
                         <div className="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
-                          <Globe className="h-5 w-5 text-primary" />
+                          <Globe className="h-5 w-5 text-accent" />
                         </div>
                         <div>
                           <p className="font-semibold text-primary">HD, UHD, 4K Formats</p>
@@ -104,7 +104,7 @@ const AboutSection = () => {
                     <CardContent className="p-0">
                       <div className="flex items-start gap-3">
                         <div className="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
-                          <Zap className="h-5 w-5 text-primary" />
+                          <Zap className="h-5 w-5 text-accent" />
                         </div>
                         <div>
                           <p className="font-semibold text-primary">Custom Adaptation</p>
