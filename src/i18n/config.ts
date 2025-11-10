@@ -2,14 +2,14 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
 import en from './locales/en.json';
-import ptBr from './locales/pt-br.json';
+import pt from './locales/pt.json';
 import es from './locales/es.json';
 import de from './locales/de.json';
 import fr from './locales/fr.json';
 import sr from './locales/sr.json';
 
 export const languages = {
-  'pt-br': { name: 'Português (Brasil)', flag: '🇧🇷', order: 1 },
+  pt: { name: 'Português', flag: '🇵🇹', order: 1 },
   en: { name: 'English', flag: '🇬🇧', order: 2 },
   de: { name: 'Deutsch', flag: '🇩🇪', order: 3 },
   es: { name: 'Español', flag: '🇪🇸', order: 4 },
@@ -22,7 +22,7 @@ i18n
   .init({
     resources: {
       en: { translation: en },
-      'pt-br': { translation: ptBr },
+      pt: { translation: pt },
       es: { translation: es },
       de: { translation: de },
       fr: { translation: fr },
@@ -34,7 +34,7 @@ i18n
     interpolation: {
       escapeValue: false
     },
-    supportedLngs: ['en', 'pt-br', 'es', 'de', 'fr', 'sr'],
+    supportedLngs: ['en', 'pt', 'es', 'de', 'fr', 'sr'],
     nonExplicitSupportedLngs: false,
     react: {
       useSuspense: false
