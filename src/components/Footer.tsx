@@ -1,6 +1,8 @@
 import { Waves, Phone } from "lucide-react";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const startYear = 2025;
+  const yearDisplay = currentYear === startYear ? `${startYear}` : `${startYear}-${currentYear}`;
   return <footer id="contact" className="bg-gradient-ocean text-primary-foreground py-12">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
@@ -37,7 +39,7 @@ const Footer = () => {
           <div className="border-t border-primary-foreground/20 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center text-sm text-primary-foreground/60">
               <div>
-                © {currentYear} Ocean Media Project. All rights reserved.
+                © {yearDisplay} Ocean Media Project. All rights reserved.
               </div>
               <div className="flex flex-wrap gap-4 justify-center md:justify-end mt-4 md:mt-0 text-xs">
                 <a href="https://www.youtube.com/@OceanMediaProject" target="_blank" rel="noopener noreferrer" className="hover:text-white hover:underline transition-colors">YouTube</a>
