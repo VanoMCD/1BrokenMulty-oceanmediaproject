@@ -1,69 +1,71 @@
+import { useTranslation } from "react-i18next";
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { Building2, Waves, Heart, Monitor, Tv, Play, Youtube, Users, Utensils } from "lucide-react";
 import clientsImage from "@/assets/clients-showcase.jpg";
 
 const ClientsSection = () => {
+  const { t } = useTranslation();
+  
   const clientTypes = [
     {
       icon: <Play className="h-8 w-8" />,
-      title: "📡 TV Channels & Production Studios",
-      description: "content for shows, documentary projects",
-      use: "Professional broadcast content"
+      title: t('clients.client1'),
+      description: t('clients.client1Desc'),
+      use: t('clients.client1Use')
     },
     {
       icon: <Monitor className="h-8 w-8" />,
-      title: "📺 Digital Signage Companies", 
-      description: "content for video panels",
-      use: "Exclusive display content"
+      title: t('clients.client2'),
+      description: t('clients.client2Desc'),
+      use: t('clients.client2Use')
     },
     {
       icon: <Utensils className="h-8 w-8" />,
-      title: "🍽️ HoReCa Background Video for Lobbies, Restaurants & Cafes",
-      description: "",
-      use: "Creating a welcoming atmosphere for guests"
+      title: t('clients.client3'),
+      description: t('clients.client3Desc'),
+      use: t('clients.client3Use')
     },
     {
       icon: <Heart className="h-8 w-8" />,
-      title: "🧘 Wellness Centers, SPAs, Yoga Studios",
-      description: "relaxation content for ambiance",
-      use: "Content for treatments and sessions"
+      title: t('clients.client4'),
+      description: t('clients.client4Desc'),
+      use: t('clients.client4Use')
     },
     {
       icon: <Waves className="h-8 w-8" />,
-      title: "🏥 Medical Clinics, Dental Offices",
-      description: "calming videos for patients",
-      use: "Reducing patient stress"
+      title: t('clients.client5'),
+      description: t('clients.client5Desc'),
+      use: t('clients.client5Use')
     },
     {
       icon: <Building2 className="h-8 w-8" />,
-      title: "🏢 Corporate Offices & Coworking Spaces",
-      description: "comfortable atmosphere for employees",
-      use: "Improving work environment"
+      title: t('clients.client6'),
+      description: t('clients.client6Desc'),
+      use: t('clients.client6Use')
     },
     {
       icon: <Users className="h-8 w-8" />,
-      title: "🎭 Museums, Exhibitions, Art Spaces",
-      description: "visual accompaniment for exhibitions",
-      use: "Complementing exhibitions"
+      title: t('clients.client7'),
+      description: t('clients.client7Desc'),
+      use: t('clients.client7Use')
     },
     {
       icon: <Users className="h-8 w-8" />,
-      title: "📹 YouTube Channels & Content Creators",
-      description: "videos for blogs, ASMR and meditations",
-      use: "Background content for videos"
+      title: t('clients.client8'),
+      description: t('clients.client8Desc'),
+      use: t('clients.client8Use')
     },
     {
       icon: <Youtube className="h-8 w-8" />,
-      title: "🎬 Streaming Services & VOD Platforms",
-      description: "video catalogs for subscribers",
-      use: "Content for relaxation channels"
+      title: t('clients.client9'),
+      description: t('clients.client9Desc'),
+      use: t('clients.client9Use')
     },
     {
       icon: <Monitor className="h-8 w-8" />,
-      title: "📢 Advertising Agencies",
-      description: "content acquisition for portfolio and client sales, campaign insertions",
-      use: "Content for advertising projects"
+      title: t('clients.client10'),
+      description: t('clients.client10Desc'),
+      use: t('clients.client10Use')
     }
   ];
 
@@ -72,9 +74,11 @@ const ClientsSection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-8">
-            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">WHO IS THIS FOR?</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+              {t('clients.title')}
+            </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Our content is perfect for various business and entertainment sectors
+              {t('clients.subtitle')}
             </p>
           </div>
 
@@ -107,24 +111,24 @@ const ClientsSection = () => {
 
           {/* Call to Action */}
           <div id="request" className="text-center bg-gradient-ocean rounded-xl p-12 text-primary-foreground">
-            <h3 className="text-3xl font-bold mb-4">Ready to Collaborate?</h3>
-            <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto text-center">
-              📩 Write to us in any language!<br />
-              We'll select and prepare content for your business!
-            </p>
+            <h3 className="text-3xl font-bold mb-4">{t('clients.ctaTitle')}</h3>
+            <p 
+              className="text-xl mb-8 opacity-90 max-w-2xl mx-auto text-center"
+              dangerouslySetInnerHTML={{ __html: t('clients.ctaText') }}
+            />
             <div className="flex justify-center">
               <a 
                 href="mailto:o666699999@gmail.com?subject=WEB%20Request&body=Hello!%0A%0AWe%20are%20interested%20in%20Relax%20content%20for%20display%20on%20...%0AWe%20need%20approximately%20...%20hours%0ATerritories%20of%20use%20-%20..."
                 className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold bg-accent text-accent-foreground rounded-lg hover:bg-accent/90 transition-colors duration-300 w-full max-w-md"
               >
-                Send Request
+                {t('clients.ctaButton')}
               </a>
             </div>
           </div>
 
           {/* Content Types Section */}
           <div className="mt-5">
-            <h3 className="text-3xl font-bold text-primary text-center mb-8">Our Content Categories</h3>
+            <h3 className="text-3xl font-bold text-primary text-center mb-8">{t('clients.categoriesTitle')}</h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               <a 
                 href="https://www.youtube.com/@OceanMediaProject"
@@ -133,8 +137,10 @@ const ClientsSection = () => {
                 className="bg-card border border-accent/20 rounded-lg p-3 text-center hover:border-accent/40 transition-colors duration-300 group"
               >
                 <div className="text-2xl mb-2">🧘</div>
-                <h4 className="text-lg font-semibold text-primary mb-1 group-hover:text-accent transition-colors">Relaxation videos</h4>
-                <p className="text-muted-foreground text-xs">visual practices for rest and recovery</p>
+                <h4 className="text-lg font-semibold text-primary mb-1 group-hover:text-accent transition-colors">
+                  {t('clients.cat1')}
+                </h4>
+                <p className="text-muted-foreground text-xs">{t('clients.cat1Desc')}</p>
               </a>
               <a 
                 href="https://www.youtube.com/@OceanMediaProject"
@@ -143,8 +149,10 @@ const ClientsSection = () => {
                 className="bg-card border border-accent/20 rounded-lg p-3 text-center hover:border-accent/40 transition-colors duration-300 group"
               >
                 <div className="text-2xl mb-2">☯️</div>
-                <h4 className="text-lg font-semibold text-primary mb-1 group-hover:text-accent transition-colors">Zen videos</h4>
-                <p className="text-muted-foreground text-xs">atmosphere of calm and meditation</p>
+                <h4 className="text-lg font-semibold text-primary mb-1 group-hover:text-accent transition-colors">
+                  {t('clients.cat2')}
+                </h4>
+                <p className="text-muted-foreground text-xs">{t('clients.cat2Desc')}</p>
               </a>
               <a 
                 href="https://www.youtube.com/@OceanMediaProject"
@@ -153,8 +161,10 @@ const ClientsSection = () => {
                 className="bg-card border border-accent/20 rounded-lg p-3 text-center hover:border-accent/40 transition-colors duration-300 group"
               >
                 <div className="text-2xl mb-2">🌿</div>
-                <h4 className="text-lg font-semibold text-primary mb-1 group-hover:text-accent transition-colors">Wellness visuals</h4>
-                <p className="text-muted-foreground text-xs">for SPAs, yoga and wellness centers</p>
+                <h4 className="text-lg font-semibold text-primary mb-1 group-hover:text-accent transition-colors">
+                  {t('clients.cat3')}
+                </h4>
+                <p className="text-muted-foreground text-xs">{t('clients.cat3Desc')}</p>
               </a>
               <a 
                 href="https://www.youtube.com/@OceanMediaProject"
@@ -163,8 +173,10 @@ const ClientsSection = () => {
                 className="bg-card border border-accent/20 rounded-lg p-3 text-center hover:border-accent/40 transition-colors duration-300 group"
               >
                 <div className="text-2xl mb-2">🎶</div>
-                <h4 className="text-lg font-semibold text-primary mb-1 group-hover:text-accent transition-colors">Soothing visuals</h4>
-                <p className="text-muted-foreground text-xs">background aesthetics for harmonious atmosphere</p>
+                <h4 className="text-lg font-semibold text-primary mb-1 group-hover:text-accent transition-colors">
+                  {t('clients.cat4')}
+                </h4>
+                <p className="text-muted-foreground text-xs">{t('clients.cat4Desc')}</p>
               </a>
               <a 
                 href="https://www.youtube.com/@OceanMediaProject"
@@ -173,8 +185,10 @@ const ClientsSection = () => {
                 className="bg-card border border-accent/20 rounded-lg p-3 text-center hover:border-accent/40 transition-colors duration-300 group"
               >
                 <div className="text-2xl mb-2">🌌</div>
-                <h4 className="text-lg font-semibold text-primary mb-1 group-hover:text-accent transition-colors">Ambient videos</h4>
-                <p className="text-muted-foreground text-xs">universal content for Digital Signage and TV</p>
+                <h4 className="text-lg font-semibold text-primary mb-1 group-hover:text-accent transition-colors">
+                  {t('clients.cat5')}
+                </h4>
+                <p className="text-muted-foreground text-xs">{t('clients.cat5Desc')}</p>
               </a>
               <a 
                 href="https://www.youtube.com/@OceanMediaProject"
@@ -183,8 +197,10 @@ const ClientsSection = () => {
                 className="bg-card border border-accent/20 rounded-lg p-3 text-center hover:border-accent/40 transition-colors duration-300 group"
               >
                 <div className="text-2xl mb-2">🌍</div>
-                <h4 className="text-lg font-semibold text-primary mb-1 group-hover:text-accent transition-colors">Nature relaxation films</h4>
-                <p className="text-muted-foreground text-xs">landscapes, nature, elements</p>
+                <h4 className="text-lg font-semibold text-primary mb-1 group-hover:text-accent transition-colors">
+                  {t('clients.cat6')}
+                </h4>
+                <p className="text-muted-foreground text-xs">{t('clients.cat6Desc')}</p>
               </a>
             </div>
           </div>

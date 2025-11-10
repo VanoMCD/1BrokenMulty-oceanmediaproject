@@ -1,9 +1,14 @@
+import { useTranslation } from "react-i18next";
 import { Waves, Phone } from "lucide-react";
+
 const Footer = () => {
+  const { t } = useTranslation();
   const currentYear = new Date().getFullYear();
   const startYear = 2025;
   const yearDisplay = currentYear === startYear ? `${startYear}` : `${startYear}-${currentYear}`;
-  return <footer id="contact" className="bg-gradient-ocean text-primary-foreground py-12">
+  
+  return (
+    <footer id="contact" className="bg-gradient-ocean text-primary-foreground py-12">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-stretch gap-8 mb-8">
@@ -11,10 +16,10 @@ const Footer = () => {
             <div className="flex flex-col space-y-4 max-w-md">
               <div className="flex items-center space-x-2">
                 <Waves className="h-6 w-6 text-accent animate-ocean-wave" />
-                <span className="text-lg font-bold">OCEAN MEDIA PROJECT</span>
+                <span className="text-lg font-bold">{t('hero.title')}</span>
               </div>
               <p className="text-primary-foreground/80 text-sm leading-loose flex-1 text-justify">
-                Our company offers hundreds of hours of relaxation videos in any required duration, as well as streaming services that transform screens into business tools. We create custom video content adapted to your industry: TV, advertising, online services, medical clinics, wellness, hotels and SPAs. All content comes with full copyrights and licenses. A ready-made solution that saves time and adds new value to your business!
+                {t('footer.description')}
               </p>
             </div>
 
@@ -22,15 +27,15 @@ const Footer = () => {
             <div className="flex flex-col space-y-4">
               <div className="flex items-center space-x-2">
                 <Phone className="h-6 w-6 text-white animate-ocean-wave" />
-                <span className="text-lg font-bold">CONTACT US</span>
+                <span className="text-lg font-bold">{t('footer.contactTitle')}</span>
               </div>
               <div className="space-y-2 text-sm text-primary-foreground/80 flex-1">
-                <div>📧 Email: <a href="mailto:o666699999@gmail.com" className="hover:text-white hover:underline transition-colors">o666699999@gmail.com</a></div>
-                <div>📱 WhatsApp: <a href="https://wa.me/381666699999" target="_blank" rel="noopener noreferrer" className="hover:text-white hover:underline transition-colors">+381 66 66 999 99</a></div>
-                <div>📱 Telegram: <a href="https://t.me/+381666699999" target="_blank" rel="noopener noreferrer" className="hover:text-white hover:underline transition-colors">+381 66 66 999 99</a></div>
-                <div>🌍 Website: <a href="https://www.oceanmediaproject.com" target="_blank" rel="noopener noreferrer" className="hover:text-white hover:underline transition-colors">www.oceanmediaproject.com</a></div>
-                <div>📘 Facebook: <a href="https://www.facebook.com/OceanMediaProject/" target="_blank" rel="noopener noreferrer" className="hover:text-white hover:underline transition-colors">Ocean Media Project</a></div>
-                <div>💼 LinkedIn: <a href="https://linkedin.com/in/oceanmediaproject" target="_blank" rel="noopener noreferrer" className="hover:text-white hover:underline transition-colors">Ocean Media Project</a></div>
+                <div>📧 {t('footer.email')}: <a href="mailto:o666699999@gmail.com" className="hover:text-white hover:underline transition-colors">o666699999@gmail.com</a></div>
+                <div>📱 {t('footer.whatsapp')}: <a href="https://wa.me/381666699999" target="_blank" rel="noopener noreferrer" className="hover:text-white hover:underline transition-colors">+381 66 66 999 99</a></div>
+                <div>📱 {t('footer.telegram')}: <a href="https://t.me/+381666699999" target="_blank" rel="noopener noreferrer" className="hover:text-white hover:underline transition-colors">+381 66 66 999 99</a></div>
+                <div>🌍 {t('footer.website')}: <a href="https://www.oceanmediaproject.com" target="_blank" rel="noopener noreferrer" className="hover:text-white hover:underline transition-colors">www.oceanmediaproject.com</a></div>
+                <div>📘 {t('footer.facebook')}: <a href="https://www.facebook.com/OceanMediaProject/" target="_blank" rel="noopener noreferrer" className="hover:text-white hover:underline transition-colors">Ocean Media Project</a></div>
+                <div>💼 {t('footer.linkedin')}: <a href="https://linkedin.com/in/oceanmediaproject" target="_blank" rel="noopener noreferrer" className="hover:text-white hover:underline transition-colors">Ocean Media Project</a></div>
               </div>
             </div>
           </div>
@@ -39,7 +44,7 @@ const Footer = () => {
           <div className="border-t border-primary-foreground/20 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center text-sm text-primary-foreground/60">
               <div>
-                © {yearDisplay} Ocean Media Project. All rights reserved.
+                © {yearDisplay} {t('footer.copyright')}
               </div>
               <div className="flex flex-wrap gap-4 justify-center md:justify-end mt-4 md:mt-0 text-xs">
                 <a href="https://www.youtube.com/@OceanMediaProject" target="_blank" rel="noopener noreferrer" className="hover:text-white hover:underline transition-colors">YouTube</a>
@@ -54,6 +59,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>;
+    </footer>
+  );
 };
+
 export default Footer;

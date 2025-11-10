@@ -1,49 +1,52 @@
+import { useTranslation } from "react-i18next";
 
 const PortfolioSection = () => {
+  const { t } = useTranslation();
+  
   const platforms = [{
     name: "YouTube Channel",
     link: "https://www.youtube.com/@OceanMediaProject",
-    description: "Watch our latest underwater adventures!",
+    description: t('portfolio.youtube'),
     icon: "https://cdn.simpleicons.org/youtube/FF0000"
   }, {
     name: "Vimeo", 
     link: "https://vimeo.com/oceanmediaproject",
-    description: "Discover premium ocean cinematography",
+    description: t('portfolio.vimeo'),
     icon: "https://cdn.simpleicons.org/vimeo/1AB7EA"
   }, {
     name: "Shutterstock",
     link: "https://shutterstock.com/ru/g/vmsartstudio/video?rid=371249757",
-    description: "License professional footage for your projects",
+    description: t('portfolio.shutterstock'),
     icon: "https://cdn.simpleicons.org/shutterstock/EE3124"
   }, {
     name: "Pond5 (Videodive)",
     link: "https://pond5.com/artist/videodive", 
-    description: "Explore our Videodive collection",
+    description: t('portfolio.pond5Videodive'),
     icon: "https://cdn.simpleicons.org/pond5/00A3E0"
   }, {
     name: "iStockphoto",
     link: "https://istockphoto.com/ru/portfolio/VIDEODIVE?assettype=film",
-    description: "Get stunning stock videos instantly",
+    description: t('portfolio.istock'),
     icon: "https://logo.clearbit.com/istockphoto.com"
   }, {
     name: "Pond5 (Videoton)",
     link: "https://pond5.com/artist/videoton", 
-    description: "Browse our Videoton portfolio",
+    description: t('portfolio.pond5Videoton'),
     icon: "https://cdn.simpleicons.org/pond5/00A3E0"
   }, {
     name: "Adobe Stock",
     link: "https://stock.adobe.com/contributor/205029892/videodive",
-    description: "Download high-quality footage for creatives",
+    description: t('portfolio.adobeStock'),
     icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23FF0000'%3E%3Cpath d='M9.002 0L6 12l1.998 12h6L12 12 14.002 0h-5zm9.998 0L17.002 12 19 24h5L22.002 12 24 0h-5.002z'/%3E%3C/svg%3E"
   }, {
     name: "Pond5 (Vmsartstudio619)",
     link: "https://pond5.com/artist/vmsartstudio619", 
-    description: "Check out Vmsartstudio619 exclusive content",
+    description: t('portfolio.pond5Vms'),
     icon: "https://cdn.simpleicons.org/pond5/00A3E0"
   }, {
     name: "Pixtastock",
     link: "https://creator-en.pixtastock.com/@videoton/footage",
-    description: "Access our Japanese market collection",
+    description: t('portfolio.pixta'),
     icon: "https://cdn.simpleicons.org/pixiv/0096FA"
   }];
 
@@ -51,9 +54,11 @@ const PortfolioSection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-4">
-            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">WHERE CAN YOU VIEW OUR CONTENT?</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+              {t('portfolio.title')}
+            </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-              Subscribe and enjoy quality content!
+              {t('portfolio.subtitle')}
             </p>
             
             {/* Platforms Info */}
@@ -79,4 +84,5 @@ const PortfolioSection = () => {
       </div>
     </section>;
 };
+
 export default PortfolioSection;

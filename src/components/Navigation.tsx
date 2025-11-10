@@ -1,16 +1,19 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Waves } from "lucide-react";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 const Navigation = () => {
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { href: "#home", label: "Home" },
-    { href: "#about", label: "About Us" },
-    { href: "#portfolio", label: "Catalog" },
-    { href: "#clients", label: "For Whom" },
-    { href: "#request", label: "Request" },
+    { href: "#home", label: t('nav.home') },
+    { href: "#about", label: t('nav.about') },
+    { href: "#portfolio", label: t('nav.catalog') },
+    { href: "#clients", label: t('nav.forWhom') },
+    { href: "#request", label: t('nav.request') },
   ];
 
   const smoothScrollTo = (targetPosition: number) => {
@@ -60,7 +63,8 @@ const Navigation = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-4">
+            <LanguageSwitcher />
             {navItems.map((item) => (
               <a
                 key={item.href}
@@ -82,7 +86,7 @@ const Navigation = () => {
                 }
               }}
             >
-              Contact Us
+              {t('nav.contact')}
             </Button>
           </div>
 
@@ -99,6 +103,7 @@ const Navigation = () => {
         {isOpen && (
           <div className="md:hidden py-4 border-t border-border">
             <div className="flex flex-col space-y-4">
+              <LanguageSwitcher />
               {navItems.map((item) => (
                 <a
                   key={item.href}
@@ -121,7 +126,7 @@ const Navigation = () => {
                   }
                 }}
               >
-                Contact Us
+                {t('nav.contact')}
               </Button>
             </div>
           </div>
