@@ -43,13 +43,13 @@ const PortfolioSection = () => {
       icon: <Film className="h-5 w-5" />
     },
     {
-      name: "Adobe Stock - Ocean Media",
-      subtitle: "Ocean Media Project content",
-      link: "https://stock.adobe.com/contributor/205029892/videodive",
-      bgColor: "bg-rose-50 dark:bg-rose-950/20",
-      iconColor: "text-rose-700",
+      name: "Shutterstock",
+      subtitle: "Premium content for professionals",
+      link: "https://shutterstock.com/ru/g/vmsartstudio/video?rid=371249757",
+      bgColor: "bg-red-50 dark:bg-red-950/20",
+      iconColor: "text-red-600",
       iconBg: "bg-white",
-      icon: <Film className="h-5 w-5" />
+      icon: <Eye className="h-5 w-5" />
     },
     {
       name: "Pond5 - Vmsartstudio",
@@ -79,13 +79,13 @@ const PortfolioSection = () => {
       icon: <Video className="h-5 w-5" />
     },
     {
-      name: "Shutterstock",
-      subtitle: "Premium content for professionals",
-      link: "https://shutterstock.com/ru/g/vmsartstudio/video?rid=371249757",
-      bgColor: "bg-red-50 dark:bg-red-950/20",
-      iconColor: "text-red-600",
+      name: "Adobe Stock - Ocean Media",
+      subtitle: "Ocean Media Project content",
+      link: "https://stock.adobe.com/contributor/205029892/videodive",
+      bgColor: "bg-rose-50 dark:bg-rose-950/20",
+      iconColor: "text-rose-700",
       iconBg: "bg-white",
-      icon: <Eye className="h-5 w-5" />
+      icon: <Film className="h-5 w-5" />
     }
   ];
 
