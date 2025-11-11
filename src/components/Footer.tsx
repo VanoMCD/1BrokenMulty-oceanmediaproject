@@ -2,10 +2,15 @@ import { useTranslation } from "react-i18next";
 import { Waves, Phone } from "lucide-react";
 
 const Footer = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const currentYear = new Date().getFullYear();
   const startYear = 2025;
   const yearDisplay = currentYear === startYear ? `${startYear}` : `${startYear}-${currentYear}`;
+  
+  // Adjust line spacing for non-English languages
+  const isEnglish = i18n.language === 'en';
+  const descriptionLeading = isEnglish ? 'leading-loose' : 'leading-relaxed';
+  const contactSpacing = isEnglish ? 'space-y-2' : 'space-y-3';
   
   return (
     <footer id="contact" className="bg-gradient-ocean text-primary-foreground py-12">
@@ -18,7 +23,7 @@ const Footer = () => {
                 <Waves className="h-6 w-6 text-accent animate-ocean-wave" />
                 <span className="text-lg font-bold">{t('hero.title')}</span>
               </div>
-              <p className="text-primary-foreground/80 text-sm leading-loose flex-1 text-justify">
+              <p className={`text-primary-foreground/80 text-sm ${descriptionLeading} flex-1 text-justify`}>
                 {t('footer.description')}
               </p>
             </div>
@@ -29,7 +34,7 @@ const Footer = () => {
                 <Phone className="h-6 w-6 text-white animate-ocean-wave" />
                 <span className="text-lg font-bold">{t('footer.contactTitle')}</span>
               </div>
-              <div className="space-y-2 text-sm text-primary-foreground/80 flex-1">
+              <div className={`${contactSpacing} text-sm text-primary-foreground/80 flex-1`}>
                 <div>📧 {t('footer.email')}: <a href="mailto:o666699999@gmail.com" className="hover:text-white hover:underline transition-colors">o666699999@gmail.com</a></div>
                 <div>📱 {t('footer.whatsapp')}: <a href="https://wa.me/381666699999" target="_blank" rel="noopener noreferrer" className="hover:text-white hover:underline transition-colors">+381 66 66 999 99</a></div>
                 <div>📱 {t('footer.telegram')}: <a href="https://t.me/+381666699999" target="_blank" rel="noopener noreferrer" className="hover:text-white hover:underline transition-colors">+381 66 66 999 99</a></div>
