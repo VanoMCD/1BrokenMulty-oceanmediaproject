@@ -18,7 +18,7 @@ const Footer = () => {
       ? 'leading-normal' 
       : isPortuguese
         ? 'leading-snug'
-        : 'leading-relaxed';
+        : 'leading-loose';
   
   const contactSpacing = isEnglish 
     ? 'space-y-2' 
