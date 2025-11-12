@@ -32,20 +32,20 @@ const Footer = () => {
     <footer id="contact" className="bg-gradient-ocean text-primary-foreground py-12">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-8 mb-8 md:items-start">
+          <div className="flex flex-col md:flex-row justify-between items-stretch gap-8 mb-8">
             {/* Logo and Description */}
-            <div className="flex flex-col space-y-4 h-full">
+            <div className="flex flex-col space-y-4 max-w-md">
               <div className="flex items-center space-x-2">
                 <Waves className="h-6 w-6 text-accent animate-ocean-wave" />
                 <span className="text-lg font-bold">{t('hero.title')}</span>
               </div>
-              <p className={`text-primary-foreground/80 text-sm ${descriptionLeading} text-justify flex-1`}>
+              <p className={`text-primary-foreground/80 text-sm ${descriptionLeading} flex-1 text-justify`}>
                 {t('footer.description')}
               </p>
             </div>
 
             {/* Contact Info */}
-            <div className="flex flex-col space-y-4 h-full justify-between">
+            <div className="flex flex-col space-y-4">
               <div className="flex items-center space-x-2">
                 <Phone className="h-6 w-6 text-white animate-ocean-wave" />
                 <span className="text-lg font-bold">{t('footer.contactTitle')}</span>
