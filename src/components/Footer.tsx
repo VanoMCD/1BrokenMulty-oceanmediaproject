@@ -7,10 +7,21 @@ const Footer = () => {
   const startYear = 2025;
   const yearDisplay = currentYear === startYear ? `${startYear}` : `${startYear}-${currentYear}`;
   
-  // Adjust line spacing for non-English languages
+  // Adjust line spacing for different languages
   const isEnglish = i18n.language === 'en';
-  const descriptionLeading = isEnglish ? 'leading-loose' : 'leading-relaxed';
-  const contactSpacing = isEnglish ? 'space-y-2' : 'space-y-3';
+  const isGermanOrSerbian = i18n.language === 'de' || i18n.language === 'sr';
+  
+  const descriptionLeading = isEnglish 
+    ? 'leading-loose' 
+    : isGermanOrSerbian 
+      ? 'leading-normal' 
+      : 'leading-relaxed';
+  
+  const contactSpacing = isEnglish 
+    ? 'space-y-2' 
+    : isGermanOrSerbian 
+      ? 'space-y-1.5' 
+      : 'space-y-3';
   
   return (
     <footer id="contact" className="bg-gradient-ocean text-primary-foreground py-12">
