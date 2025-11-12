@@ -17,7 +17,7 @@ const Footer = () => {
     : isGermanOrSerbian 
       ? 'leading-normal' 
       : isPortuguese
-        ? 'leading-tight'
+        ? 'leading-snug'
         : 'leading-relaxed';
   
   const contactSpacing = isEnglish 
@@ -25,7 +25,7 @@ const Footer = () => {
     : isGermanOrSerbian 
       ? 'space-y-1.5' 
       : isPortuguese
-        ? 'space-y-2'
+        ? 'space-y-1'
         : 'space-y-3';
   
   return (
