@@ -8,25 +8,45 @@ const Footer = () => {
   const yearDisplay = currentYear === startYear ? `${startYear}` : `${startYear}-${currentYear}`;
   
   // Adjust line spacing for different languages
-  const isEnglish = i18n.language === 'en';
-  const isGermanOrSerbian = i18n.language === 'de' || i18n.language === 'sr';
-  const isPortuguese = i18n.language === 'pt';
+  const getDescriptionLeading = () => {
+    switch (i18n.language) {
+      case 'en':
+        return 'leading-loose';
+      case 'de':
+        return 'leading-normal';
+      case 'pt':
+        return 'leading-snug';
+      case 'sr':
+        return 'leading-[2.2]';
+      case 'es':
+        return 'leading-relaxed';
+      case 'fr':
+        return 'leading-relaxed';
+      default:
+        return 'leading-relaxed';
+    }
+  };
   
-  const descriptionLeading = isEnglish 
-    ? 'leading-loose' 
-    : isGermanOrSerbian 
-      ? 'leading-normal' 
-      : isPortuguese
-        ? 'leading-snug'
-        : 'leading-loose';
+  const descriptionLeading = getDescriptionLeading();
   
-  const contactSpacing = isEnglish 
-    ? 'space-y-2' 
-    : isGermanOrSerbian 
-      ? 'space-y-1.5' 
-      : isPortuguese
-        ? 'space-y-1'
-        : 'space-y-3';
+  const getContactSpacing = () => {
+    switch (i18n.language) {
+      case 'en':
+        return 'space-y-2';
+      case 'de':
+      case 'sr':
+        return 'space-y-1.5';
+      case 'pt':
+        return 'space-y-1';
+      case 'es':
+      case 'fr':
+        return 'space-y-2.5';
+      default:
+        return 'space-y-3';
+    }
+  };
+  
+  const contactSpacing = getContactSpacing();
   
   return (
     <footer id="contact" className="bg-gradient-ocean text-primary-foreground py-12">
