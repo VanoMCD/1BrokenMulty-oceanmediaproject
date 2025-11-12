@@ -17,7 +17,7 @@ const Footer = () => {
       case 'pt':
         return 'leading-snug';
       case 'sr':
-        return 'leading-[2.2]';
+        return 'leading-[2.4]';
       case 'es':
         return 'leading-relaxed';
       case 'fr':
