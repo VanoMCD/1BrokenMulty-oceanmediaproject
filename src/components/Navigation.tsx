@@ -57,10 +57,15 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
+          <a 
+            href="https://oceanmediaproject.com/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex items-center space-x-2 hover:opacity-80 transition-opacity duration-300 cursor-pointer"
+          >
             <Waves className="h-8 w-8 text-accent animate-ocean-wave" />
             <span className="text-xl font-bold text-primary">OCEAN MEDIA PROJECT</span>
-          </div>
+          </a>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-4">
